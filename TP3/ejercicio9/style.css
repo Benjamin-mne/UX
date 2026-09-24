@@ -1,0 +1,17 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+}

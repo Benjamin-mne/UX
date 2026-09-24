@@ -1,0 +1,11 @@
+.links li a:hover {
+    background-color: red;
+}
+
+.links li:nth-child(2) a {
+    background: green;
+}
+
+.links a::after {
+    content: "🐱‍👤";
+}

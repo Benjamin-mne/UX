@@ -1,0 +1,23 @@
+#div_1 {
+    background-color: red;
+}
+
+#div_1 p {
+    background-color: green;
+}
+
+#div_1 span {
+    background-color: blue;
+}
+
+.div_2 {
+    background-color: blue;
+
+    p {
+        background-color: green;
+    }
+
+    span {
+        background-color: red;
+    }
+}

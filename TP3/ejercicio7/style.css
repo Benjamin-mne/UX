@@ -1,0 +1,11 @@
+body {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
+}

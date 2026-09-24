@@ -1,0 +1,22 @@
+:root {
+    --color-primario: #ff0000;
+    --color-secundario: #00ff00;
+    --color-azul: #0000ff;
+
+    --dark-theme-bg: #000000;
+    --dark-theme-color: #ffffff;
+}
+
+* {
+    background-color: var(--dark-theme-bg);
+    color: var(--dark-theme-color);
+}
+
+.quad {
+    width: 100px;
+    height: 100px;
+}
+
+._1 { background-color: var(--color-primario); }
+._2 { background-color: var(--color-secundario); }
+._3 { background-color: var(--color-azul); }

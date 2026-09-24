@@ -1,0 +1,23 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.element {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    right: 10rem;
+    left: 10rem;
+}
+
+.element:hover {
+
+    .tooltip {
+        display: block;
+    }
+}

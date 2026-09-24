@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenidos a Nuestro Sitio</h1>
+                <p>Soluciones simples usando estándares de desarrollo modernos.</p>
+                <a href="#contacto" class="hero-btn">Comenzar ahora</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="section-padding">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción corta del primer servicio ofrecido.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción corta del segundo servicio ofrecido.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción corta del tercer servicio ofrecido.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonios" class="section-padding">
+            <h2>Testimonios</h2>
+            <div class="testimonial-carousel">
+                <blockquote class="testimonial-slide">
+                    <p>"Excelente servicio, el código es muy limpio y ordenado."</p>
+                    <cite>— Juan Pérez</cite>
+                </blockquote>
+                <blockquote class="testimonial-slide">
+                    <p>"La mejor experiencia de desarrollo que hemos tenido."</p>
+                    <cite>— María García</cite>
+                </blockquote>
+                <blockquote class="testimonial-slide">
+                    <p>"Estructura semántica impecable y gran responsividad."</p>
+                    <cite>— Carlos Rodríguez</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-padding">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
