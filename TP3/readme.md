@@ -9,7 +9,7 @@
 
 Este repositorio contiene la resolución completa del Trabajo Práctico de HTML y CSS, compuesto por 20 ejercicios distribuidos desde el nivel básico hasta el nivel medio/avanzado.
 
-Cada ejercicio ha sido resuelto en su respectiva carpeta independiente (`ejercicio1` a `ejercicio20`), utilizando HTML5 semántico y CSS3 moderno (Flexbox, CSS Grid, variables CSS, animaciones, etc.).
+Cada ejercicio ha sido resuelto en su respectiva carpeta independiente (`ejercicio-01` a `ejercicio-20`), utilizando HTML5 semántico y CSS3 moderno (Flexbox, CSS Grid, variables CSS, animaciones, etc.).
 
 No se requirieron decisiones de diseño o arquitectura adicionales fuera de lo estipulado, resolviendo todos los consignas de forma estricta e individual.
 
