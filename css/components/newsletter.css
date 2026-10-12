@@ -1,0 +1,126 @@
+@layer components {
+  .newsletter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-sand);
+    min-height: 320px;
+    overflow: hidden;
+  }
+
+  .newsletter__beans {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .newsletter__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .newsletter__title {
+    font-family: var(--font-ui);
+    font-size: clamp(1.5rem, 1.1rem + 1vw, 2rem);
+    font-weight: 600;
+    color: var(--color-espresso);
+  }
+
+  .newsletter__subtitle {
+    max-width: 520px;
+    font-family: var(--font-ui);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    color: var(--color-espresso);
+  }
+
+  .newsletter__form {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .newsletter__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .newsletter__icon {
+    position: absolute;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+
+  .newsletter__input {
+    width: 364px;
+    max-width: 100%;
+    height: 44px;
+    padding-inline: 58px 16px;
+    border: 2px solid transparent;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-bg);
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: var(--color-espresso);
+  }
+
+  .newsletter__input::placeholder {
+    color: var(--color-muted);
+  }
+
+  .newsletter__input:user-invalid {
+    border-color: #b3261e;
+  }
+
+  .newsletter__input:invalid:not(:placeholder-shown) {
+    border-color: #b3261e;
+  }
+
+  .newsletter__submit {
+    height: 44px;
+    padding-inline: var(--space-6);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-espresso);
+    color: var(--color-bg);
+    font-family: var(--font-ui);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+  }
+
+  @media (max-width: 599.98px) {
+    .newsletter__beans {
+      display: none;
+    }
+
+    .newsletter__form {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .newsletter__field,
+    .newsletter__input,
+    .newsletter__submit {
+      width: 100%;
+    }
+  }
+
+  @media (hover: hover) {
+    .newsletter__submit:hover {
+      transform: translateY(-2px);
+      background-color: var(--color-maroon);
+    }
+  }
+}

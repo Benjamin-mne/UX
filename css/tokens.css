@@ -1,0 +1,66 @@
+@layer tokens {
+  :root {
+    /* Colores (PRD §4) */
+    --color-espresso: #30261c;
+    --color-maroon: #2a0000;
+    --color-sand: #e2d9c8;
+    --color-sand-20: rgba(226, 217, 200, 0.2);
+    --color-sand-40: rgba(226, 217, 200, 0.4);
+    --color-bg: #f1f0ee;
+    --color-muted: #544a3e;
+    --color-border-soft: rgba(48, 38, 28, 0.1);
+    --color-text-soft: rgba(48, 38, 28, 0.7);
+    --color-white: #ffffff;
+    --color-black: #000000;
+    /* Estrella de rating: valor por defecto, ajustar si el SVG exportado usa otro (nodo 0:200) */
+    --color-star: #cecece;
+
+    /* Tipografía */
+    --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-body: "Outfit", system-ui, -apple-system, sans-serif;
+    --font-ui: "Poppins", system-ui, -apple-system, sans-serif;
+    --font-accent: "Reggae One", "Outfit", cursive;
+
+    /* Escala tipográfica desktop (PRD §4) */
+    --fs-hero: clamp(2.5rem, 1.5rem + 3.5vw, 4.5rem);
+    --lh-hero: 1.14;
+    --fs-h2: clamp(1.75rem, 1.4rem + 0.9vw, 2rem);
+    --tracking-h2: 0.04em;
+    --fs-cta: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem);
+    --lh-cta: 1.25;
+    --fs-card-title: clamp(1.75rem, 1.4rem + 0.9vw, 2.375rem);
+    --fs-logo: 2rem;
+    --fs-footer-h: 1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-md: 1.125rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-xs: 0.75rem;
+
+    /* Forma */
+    --radius-pill: 100px;
+    --radius-card: 18px;
+    --radius-img: 12px;
+    --radius-btn: 8px;
+    --circle-sm: 40px;
+    --circle-md: 56px;
+    --circle-lg: 61px;
+    --circle-arrow: 71px;
+
+    /* Espaciado */
+    --container: 1444px;
+    --container-pad: clamp(1rem, 5vw, 238px);
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem;
+    --space-10: 2.5rem;
+    --space-14: 3.5rem;
+
+    /* Componentes comunes */
+    --shadow-card: 0 18px 40px rgba(48, 38, 28, 0.12);
+    --transition-fast: 200ms ease;
+  }
+}

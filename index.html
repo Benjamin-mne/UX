@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffea — The richest coffee in the city</title>
+    <meta
+      name="description"
+      content="Coffea serves the richest coffee in the city. Explore our special coffee, desserts, best beans and order online."
+    >
+    <meta name="theme-color" content="#30261C">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coffea — The richest coffee in the city">
+    <meta
+      property="og:description"
+      content="Explore our special coffee, desserts and best coffee beans."
+    >
+    <meta property="og:image" content="assets/img/hero.avif">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap"
+    >
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="/" aria-label="Coffea home">Coffea</a>
+
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="header__checkbox"
+          aria-label="Toggle navigation"
+        >
+
+        <nav class="header__nav" aria-label="Primary">
+          <ul class="header__list">
+            <li><a class="header__link" href="#home">home</a></li>
+            <li><a class="header__link" href="#coffee">coffee</a></li>
+            <li><a class="header__link" href="#dessert">bakery</a></li>
+            <li><a class="header__link" href="#coffee">shop</a></li>
+            <li><a class="header__link" href="#about">about</a></li>
+            <li>
+              <a class="header__link" href="#login" id="login">login</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <label class="header__toggle" for="nav-toggle">
+            <span class="visually-hidden">Menu</span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+          </label>
+          <button class="header__search" type="button" aria-label="Search">
+            <img src="assets/icons/search.svg" alt="" width="24" height="24">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. Hero -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <img
+            src="assets/img/hero.avif"
+            alt=""
+            width="1920"
+            height="1000"
+            fetchpriority="high"
+          >
+        </div>
+        <div class="hero__content container">
+          <div class="hero__text">
+            <div class="hero__intro">
+              <p class="hero__eyebrow">Welcome</p>
+              <h1 class="hero__title" id="hero-title">
+                We serve the richest coffee in the city!
+              </h1>
+            </div>
+            <p class="hero__lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </p>
+            <a class="hero__cta" href="#coffee">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Categorías -->
+      <section class="categories section--band" aria-label="Categories">
+        <div class="container">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#coffee">
+                <img
+                  class="categories__icon"
+                  src="assets/icons/cat-hot.svg"
+                  alt=""
+                  width="82"
+                  height="82"
+                >
+                <span class="categories__label">Hot Coffee</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#coffee">
+                <img
+                  class="categories__icon"
+                  src="assets/icons/cat-cold.svg"
+                  alt=""
+                  width="82"
+                  height="82"
+                >
+                <span class="categories__label">Cold Coffee</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#coffee">
+                <img
+                  class="categories__icon"
+                  src="assets/icons/cat-cup.svg"
+                  alt=""
+                  width="82"
+                  height="82"
+                >
+                <span class="categories__label">Cup Coffee</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#dessert">
+                <img
+                  class="categories__icon"
+                  src="assets/icons/cat-dessert.svg"
+                  alt=""
+                  width="82"
+                  height="82"
+                >
+                <span class="categories__label">Dessert</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. Our Special Coffee -->
+      <section class="products section" id="coffee" aria-labelledby="coffee-title">
+        <h2 class="section__title" id="coffee-title">OUR SPECIAL COFFEE</h2>
+        <div class="carousel">
+          <ul class="carousel__track">
+            <li class="carousel__item">
+              <article class="product-card" id="coffee-1">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/coffee-1.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-coffee-1"
+                  >
+                  <label class="product-card__favorite" for="fav-coffee-1">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#coffee">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="coffee-2">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/coffee-2.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-coffee-2"
+                  >
+                  <label class="product-card__favorite" for="fav-coffee-2">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#coffee">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="coffee-3">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/coffee-3.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-coffee-3"
+                  >
+                  <label class="product-card__favorite" for="fav-coffee-3">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#coffee">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="coffee-4">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/coffee-4.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-coffee-4"
+                  >
+                  <label class="product-card__favorite" for="fav-coffee-4">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#coffee">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <a
+            class="carousel__arrow carousel__arrow--prev"
+            href="#coffee-1"
+            aria-label="Previous product"
+          >
+            <img src="assets/icons/arrow-left.svg" alt="" width="24" height="24">
+          </a>
+          <a
+            class="carousel__arrow carousel__arrow--next"
+            href="#coffee-4"
+            aria-label="Next product"
+          >
+            <img src="assets/icons/arrow-right.svg" alt="" width="24" height="24">
+          </a>
+        </div>
+      </section>
+
+      <!-- 4. Our Special Dessert -->
+      <section
+        class="products section"
+        id="dessert"
+        aria-labelledby="dessert-title"
+      >
+        <h2 class="section__title" id="dessert-title">OUR SPECIAL DESSERT</h2>
+        <div class="carousel">
+          <ul class="carousel__track">
+            <li class="carousel__item">
+              <article class="product-card" id="dessert-1">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/dessert-1.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-dessert-1"
+                  >
+                  <label class="product-card__favorite" for="fav-dessert-1">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#dessert">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="dessert-2">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/dessert-2.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-dessert-2"
+                  >
+                  <label class="product-card__favorite" for="fav-dessert-2">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#dessert">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="dessert-3">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/dessert-3.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-dessert-3"
+                  >
+                  <label class="product-card__favorite" for="fav-dessert-3">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#dessert">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="carousel__item">
+              <article class="product-card" id="dessert-4">
+                <div class="product-card__media">
+                  <img
+                    class="product-card__image"
+                    src="assets/img/dessert-4.avif"
+                    alt="Lungo coffee served in a cup"
+                    width="334"
+                    height="364"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <input
+                    class="product-card__favorite-input"
+                    type="checkbox"
+                    id="fav-dessert-4"
+                  >
+                  <label class="product-card__favorite" for="fav-dessert-4">
+                    <span class="visually-hidden"
+                      >Add Lungo coffee to favorites</span
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--outline"
+                      src="assets/icons/heart.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                    <img
+                      class="product-card__favorite-icon product-card__favorite-icon--filled"
+                      src="assets/icons/heart-filled.svg"
+                      alt=""
+                      width="33"
+                      height="33"
+                    >
+                  </label>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__heading">
+                    <h3 class="product-card__title">Lungo coffee</h3>
+                    <p class="product-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </p>
+                  </div>
+                  <div class="product-card__footer">
+                    <data class="product-card__price" value="200">Rs. 200</data>
+                    <a class="product-card__cta" href="#dessert">Order Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <a
+            class="carousel__arrow carousel__arrow--prev"
+            href="#dessert-1"
+            aria-label="Previous dessert"
+          >
+            <img src="assets/icons/arrow-left.svg" alt="" width="24" height="24">
+          </a>
+          <a
+            class="carousel__arrow carousel__arrow--next"
+            href="#dessert-4"
+            aria-label="Next dessert"
+          >
+            <img src="assets/icons/arrow-right.svg" alt="" width="24" height="24">
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. CTA granos de café -->
+      <section class="promo section--band" aria-labelledby="promo-title">
+        <img
+          class="promo__image promo__image--left"
+          src="assets/img/promo-hand.avif"
+          alt=""
+          width="520"
+          height="335"
+          loading="lazy"
+          decoding="async"
+        >
+        <img
+          class="promo__image promo__image--right"
+          src="assets/img/promo-beans.avif"
+          alt=""
+          width="503"
+          height="335"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="promo__content container">
+          <h2 class="promo__title" id="promo-title">
+            Check Out Our Best Coffee Beans
+          </h2>
+          <a class="promo__cta" href="#coffee">
+            Explore Our Products
+            <span class="promo__chevrons" aria-hidden="true">
+              <img src="assets/icons/chevron.svg" alt="" width="20" height="20">
+              <img src="assets/icons/chevron.svg" alt="" width="20" height="20">
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 6. Testimonios -->
+      <section
+        class="testimonials section"
+        id="about"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <header class="testimonials__header">
+            <p class="testimonials__eyebrow">Come and Join</p>
+            <h2 class="testimonials__title" id="testimonials-title">
+              OUR HAPPY CUSTOMERS
+            </h2>
+          </header>
+
+          <ul class="testimonials__list">
+            <li>
+              <figure class="testimonial-card" id="t-1">
+                <figcaption class="testimonial-card__head">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="assets/img/avatar-1.avif"
+                    alt=""
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <span class="testimonial-card__who">
+                    <span class="testimonial-card__name">James Smith</span>
+                    <span class="testimonial-card__role">Entrepreneur</span>
+                  </span>
+                  <span
+                    class="testimonial-card__rating"
+                    role="img"
+                    aria-label="4 out of 5 stars"
+                  >
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star.svg" alt="" width="24" height="24">
+                  </span>
+                </figcaption>
+                <blockquote class="testimonial-card__quote">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
+                </blockquote>
+              </figure>
+            </li>
+            <li>
+              <figure class="testimonial-card testimonial-card--featured" id="t-2">
+                <figcaption class="testimonial-card__head">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="assets/img/avatar-2.avif"
+                    alt=""
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <span class="testimonial-card__who">
+                    <span class="testimonial-card__name">James Smith</span>
+                    <span class="testimonial-card__role">Entrepreneur</span>
+                  </span>
+                  <span
+                    class="testimonial-card__rating"
+                    role="img"
+                    aria-label="5 out of 5 stars"
+                  >
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                  </span>
+                </figcaption>
+                <blockquote class="testimonial-card__quote">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
+                </blockquote>
+              </figure>
+            </li>
+            <li>
+              <figure class="testimonial-card" id="t-3">
+                <figcaption class="testimonial-card__head">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="assets/img/avatar-3.avif"
+                    alt=""
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <span class="testimonial-card__who">
+                    <span class="testimonial-card__name">James Smith</span>
+                    <span class="testimonial-card__role">Entrepreneur</span>
+                  </span>
+                  <span
+                    class="testimonial-card__rating"
+                    role="img"
+                    aria-label="3 out of 5 stars"
+                  >
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star-filled.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star.svg" alt="" width="24" height="24">
+                    <img src="assets/icons/star.svg" alt="" width="24" height="24">
+                  </span>
+                </figcaption>
+                <blockquote class="testimonial-card__quote">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
+                </blockquote>
+              </figure>
+            </li>
+          </ul>
+
+          <div class="testimonials__pagination">
+            <a
+              class="testimonials__dot"
+              href="#t-1"
+              aria-label="Go to testimonial 1"
+              aria-current="true"
+            ></a>
+            <a
+              class="testimonials__dot"
+              href="#t-2"
+              aria-label="Go to testimonial 2"
+            ></a>
+            <a
+              class="testimonials__dot"
+              href="#t-3"
+              aria-label="Go to testimonial 3"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Newsletter -->
+      <section
+        class="newsletter section--band"
+        aria-labelledby="newsletter-title"
+      >
+        <img
+          class="newsletter__beans"
+          src="assets/img/newsletter-beans.avif"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="newsletter__content container">
+          <h2 class="newsletter__title" id="newsletter-title">
+            Join in and get 15% off!
+          </h2>
+          <p class="newsletter__subtitle">
+            Subscribe to our newsletter and get 15% off discount code.
+          </p>
+          <form class="newsletter__form" action="#" method="POST">
+            <label class="visually-hidden" for="newsletter-email"
+              >Email address</label
+            >
+            <div class="newsletter__field">
+              <img
+                class="newsletter__icon"
+                src="assets/icons/mail.svg"
+                alt=""
+                width="24"
+                height="24"
+              >
+              <input
+                class="newsletter__input"
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="Email address"
+                autocomplete="email"
+                required
+              >
+            </div>
+            <button class="newsletter__submit" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="footer__logo" href="/" aria-label="Coffea home">COFFEE</a>
+
+        <nav class="footer__col" aria-labelledby="footer-privacy-title">
+          <h3 class="footer__heading" id="footer-privacy-title">Privacy</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#">Terms of use</a></li>
+            <li><a class="footer__link" href="#">Privacy Policy</a></li>
+            <li><a class="footer__link" href="#">Cookies</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="footer-services-title">
+          <h3 class="footer__heading" id="footer-services-title">Services</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#coffee">Shop</a></li>
+            <li><a class="footer__link" href="#dessert">Order ahead</a></li>
+            <li><a class="footer__link" href="#coffee">Menu</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="footer-about-title">
+          <h3 class="footer__heading" id="footer-about-title">About Us</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#about">Find a location</a></li>
+            <li><a class="footer__link" href="#about">About us</a></li>
+            <li><a class="footer__link" href="#">Out story</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="footer-info-title">
+          <h3 class="footer__heading" id="footer-info-title">Information</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#">Plons & pricing</a></li>
+            <li><a class="footer__link" href="#">Sell your prodcts</a></li>
+            <li><a class="footer__link" href="#">Jobs</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__social">
+          <h3 class="footer__heading">Social Media</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on X"
+              >
+                <img src="assets/icons/social-x.svg" alt="" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on Instagram"
+              >
+                <img
+                  src="assets/icons/social-instagram.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on Facebook"
+              >
+                <img
+                  src="assets/icons/social-facebook.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on LinkedIn"
+              >
+                <img
+                  src="assets/icons/social-linkedin.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

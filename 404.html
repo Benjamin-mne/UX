@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found — Coffea</title>
+    <meta name="description" content="The page you are looking for could not be found.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#30261C">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap"
+    >
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="/" aria-label="Coffea home">Coffea</a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="header__checkbox"
+          aria-label="Toggle navigation"
+        >
+        <nav class="header__nav" aria-label="Primary">
+          <ul class="header__list">
+            <li><a class="header__link" href="index.html#home">home</a></li>
+            <li><a class="header__link" href="index.html#coffee">coffee</a></li>
+            <li><a class="header__link" href="index.html#dessert">bakery</a></li>
+            <li><a class="header__link" href="index.html#coffee">shop</a></li>
+            <li><a class="header__link" href="index.html#about">about</a></li>
+            <li><a class="header__link" href="index.html#login">login</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <label class="header__toggle" for="nav-toggle">
+            <span class="visually-hidden">Menu</span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+          </label>
+          <button class="header__search" type="button" aria-label="Search">
+            <img src="assets/icons/search.svg" alt="" width="24" height="24">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="error-title">
+        <div class="hero__media">
+          <img src="assets/img/hero.avif" alt="" width="1920" height="1000">
+        </div>
+        <div class="hero__content container">
+          <div class="hero__text">
+            <div class="hero__intro">
+              <p class="hero__eyebrow">Error 404</p>
+              <h1 class="hero__title" id="error-title">
+                This cup seems to be empty.
+              </h1>
+            </div>
+            <p class="hero__lead">
+              The page you are looking for could not be found. Let's get you back
+              to a fresh brew.
+            </p>
+            <a class="hero__cta" href="index.html">Back to home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="footer__logo" href="/" aria-label="Coffea home">Coffee</a>
+        <div class="footer__col footer__social">
+          <h3 class="footer__heading">Social Media</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a class="footer__social-link" href="#" aria-label="Coffea on X">
+                <img src="assets/icons/social-x.svg" alt="" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on Instagram"
+              >
+                <img
+                  src="assets/icons/social-instagram.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on Facebook"
+              >
+                <img
+                  src="assets/icons/social-facebook.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="#"
+                aria-label="Coffea on LinkedIn"
+              >
+                <img
+                  src="assets/icons/social-linkedin.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
