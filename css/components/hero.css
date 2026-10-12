@@ -20,17 +20,17 @@
   }
 
   .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(
-      90deg,
-      rgba(48, 38, 28, 0.75) 0%,
-      rgba(48, 38, 28, 0.35) 45%,
-      rgba(48, 38, 28, 0) 75%
-    );
-  }
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        90deg,
+        rgba(15, 15, 15, 0.75) 0%,
+        rgba(15, 15, 15, 0.35) 45%,
+        rgba(15, 15, 15, 0) 75%
+      );
+    }
 
   .hero__content {
     position: relative;
