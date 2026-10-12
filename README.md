@@ -70,7 +70,7 @@ todos los navegadores objetivo soportan AVIF).
 | --- | --- | --- |
 | `hero.avif` | 3840×2000 | 0:4 |
 | `coffee-1..4.avif` | 668×728 | 0:54, 0:67, 0:80, 0:93 |
-| `dessert-1..4.avif` | 668×728 | 0:118, 0:131, 0:144, 0:157 |
+| `dessert-1..4.avif` | 668×728 | Wikimedia Commons (ver *Créditos de fotos*) |
 | `promo-hand.avif` | 1041×670 | 0:188 |
 | `promo-beans.avif` | 1005×670 | 0:189 |
 | `newsletter-beans.avif` | 3840×642 | 0:253 (+ 0:254 espejado) |
@@ -84,6 +84,23 @@ todos los navegadores objetivo soportan AVIF).
 
 > **Pendientes de exportar:** `chevron.svg` (doble chevron del CTA, 0:184) y
 > `favicon.svg` no venían en la exportación, así que por ahora son placeholders.
+
+### Créditos de fotos
+
+Los cuatro nodos de la sección *"Our Special Dessert"* del Figma (0:118, 0:131,
+0:144, 0:157) contenían **fotos de café** en vez de postres (riesgo señalado en
+el PRD). Se reemplazaron por fotos de postres de **Wikimedia Commons** (recorte a
+668×728, `object-fit: cover`):
+
+| Archivo | Postre | Autor | Licencia |
+| --- | --- | --- | --- |
+| `dessert-1.avif` | Chocolate Cake | Daria Yakovleva | CC0 |
+| `dessert-2.avif` | Lemon Pie | claralieu | CC BY 2.0 |
+| `dessert-3.avif` | Tiramisu | Anna.Massini | CC BY 4.0 |
+| `dessert-4.avif` | Cheesecake | Alex Dugger | CC BY 2.0 |
+
+Las licencias CC BY requieren **atribución**; conservar esta tabla (o una página
+de créditos) si el sitio se publica.
 
 ## Interacciones (sin JavaScript)
 
@@ -127,6 +144,7 @@ a Netlify para deploy continuo desde `main` y Deploy Previews por PR.
 
 - Contenido en **inglés** (`lang="en"`); typos del diseño corregidos
   ("Explore Out" → "Explore Our Products", marca consistente "Coffea", etc.).
-- Copy de productos/testimonios del diseño es **placeholder** ("Lungo coffee",
+- La sección **Dessert** ya usa contenido real (títulos y fotos de postres); el
+  resto de productos/testimonios del diseño sigue **placeholder** ("Lungo coffee",
   "Rs. 200", lorem ipsum).
 - `--color-star` es un valor por defecto; ajustar al color del SVG `star` (0:200).
