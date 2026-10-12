@@ -146,5 +146,6 @@ a Netlify para deploy continuo desde `main` y Deploy Previews por PR.
   ("Explore Out" → "Explore Our Products", marca consistente "Coffea", etc.).
 - La sección **Dessert** ya usa contenido real (títulos y fotos de postres); el
   resto de productos/testimonios del diseño sigue **placeholder** ("Lungo coffee",
-  "Rs. 200", lorem ipsum).
+  lorem ipsum). Los precios se muestran en **pesos argentinos** (`$1.200`, formato
+  con punto de miles); son de ejemplo hasta cargar el catálogo real.
 - `--color-star` es un valor por defecto; ajustar al color del SVG `star` (0:200).
