@@ -104,6 +104,19 @@ Mobile-first con breakpoints en `base` (360+), `md`/tablet (768–1199), `lg`
 (768, 834, 820, 1032 px) y evita el scroll horizontal que producía el layout
 desktop por debajo de 1200 px. Sin scroll horizontal entre 360 y 1920 px.
 
+## Open Graph / Social
+
+La cabecera de `index.html` incluye Open Graph + Twitter Card con URLs absolutas
+(base `https://tp4-ux.netlify.app/`) y `rel="canonical"`. Open Graph cubre
+Facebook, WhatsApp, Telegram, LinkedIn, Slack, Discord, iMessage y Pinterest; los
+tags `twitter:*` cubren X. El preview usa `assets/img/og-coffea.jpg`
+(1200×630, JPEG ~91 KB), una captura del hero generada con Edge headless.
+
+> El OG image se mantiene en **JPEG** (excepción al "AVIF only"): los scrapers
+> sociales no soportan AVIF. Si cambia el dominio, actualizar las URLs absolutas
+> (`canonical`, `og:url`, `og:image`, `twitter:image`) y re-scrapear con el
+> Facebook Sharing Debugger / X Card Validator / LinkedIn Post Inspector.
+
 ## Deploy (Netlify)
 
 `netlify.toml` publica la raíz (`publish = "."`) sin build command, con headers
