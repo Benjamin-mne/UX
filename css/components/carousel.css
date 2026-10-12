@@ -52,7 +52,13 @@
     right: 80px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .carousel__item {
+      flex: 0 0 calc((100% - 2 * 4px) / 2.5);
+    }
+  }
+
+  @media (min-width: 1200px) {
     .carousel {
       padding-inline: 160px;
     }

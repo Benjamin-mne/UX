@@ -98,6 +98,16 @@
     }
   }
 
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .hero__content {
+      padding-block: 220px 100px;
+    }
+
+    .hero__title {
+      font-size: 3.5rem;
+    }
+  }
+
   @media (hover: hover) {
     .hero__cta:hover {
       transform: translateY(-2px);

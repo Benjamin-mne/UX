@@ -99,8 +99,10 @@ todos los navegadores objetivo soportan AVIF).
 
 ## Responsive
 
-Mobile-first con breakpoints en `base` (360+), `md` (768), `lg` (1024) y `xl`
-(1440, diseño original). Sin scroll horizontal entre 360 y 1920 px.
+Mobile-first con breakpoints en `base` (360+), `md`/tablet (768–1199), `lg`
+(1200) y `xl` (1440, diseño original). El rango tablet 768–1199 cubre iPad
+(768, 834, 820, 1032 px) y evita el scroll horizontal que producía el layout
+desktop por debajo de 1200 px. Sin scroll horizontal entre 360 y 1920 px.
 
 ## Deploy (Netlify)
 

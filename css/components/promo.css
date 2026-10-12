@@ -76,15 +76,33 @@
     margin-inline-start: -12px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .promo__content {
       padding-inline-start: 19.27%;
     }
   }
 
-  @media (max-width: 1023.98px) {
+  @media (max-width: 767.98px) {
     .promo__image {
       display: none;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .promo__image--left {
+      display: block;
+      width: 30%;
+      max-width: 300px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .promo__image--right {
+      display: none;
+    }
+
+    .promo__content {
+      padding-inline-start: 32%;
     }
   }
 

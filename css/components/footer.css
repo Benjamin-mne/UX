@@ -107,7 +107,28 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .footer__inner {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer__links {
+      gap: 0;
+    }
+
+    .footer__link {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding-block: var(--space-2);
+    }
+
+    .footer__social-list {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (min-width: 1200px) {
     .footer__inner {
       grid-template-columns: 1fr repeat(4, auto) 1fr;
       align-items: start;
