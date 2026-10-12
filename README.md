@@ -91,6 +91,8 @@ todos los navegadores objetivo soportan AVIF).
   anclas a las cards con `scroll-behavior: smooth`.
 - **Menú mobile:** toggle CSS-only (checkbox oculto + label) — equivalente al
   `<details>/<summary>` del PRD, elegido por robustez en todos los breakpoints.
+  Incluye el buscador dentro del panel, apertura animada (fade/slide + morfismo
+  hamburguesa→X) y bloqueo de scroll del body con `:has()`.
 - **Favorito (corazón):** `input[type=checkbox]` + `label` con `:checked`.
 - **Newsletter:** validación nativa con `type="email" required` + `:user-invalid`.
 - **`prefers-reduced-motion`:** desactiva transiciones y scroll suave.

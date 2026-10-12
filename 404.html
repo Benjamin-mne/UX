@@ -29,6 +29,24 @@
           aria-label="Toggle navigation"
         >
         <nav class="header__nav" aria-label="Primary">
+          <form class="header__search-form" role="search" action="#">
+            <img
+              class="header__search-icon"
+              src="assets/icons/search.svg"
+              alt=""
+              width="20"
+              height="20"
+            >
+            <input
+              class="header__search-input"
+              type="search"
+              name="q"
+              placeholder="Search"
+              aria-label="Search"
+              autocomplete="off"
+            >
+            <button class="visually-hidden" type="submit">Search</button>
+          </form>
           <ul class="header__list">
             <li><a class="header__link" href="index.html#home">home</a></li>
             <li><a class="header__link" href="index.html#coffee">coffee</a></li>
