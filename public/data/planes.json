@@ -1,0 +1,29 @@
+[
+  {
+    "id": "basico",
+    "nombre": "Básico",
+    "descripcion": "La cobertura esencial para tu día a día.",
+    "tasaAnual": 0.04,
+    "recomendado": false,
+    "coberturas": ["Robo con violencia"],
+    "noIncluye": ["Rotura de pantalla", "Rotura total", "Hurto / pérdida"]
+  },
+  {
+    "id": "plus",
+    "nombre": "Plus",
+    "descripcion": "El equilibrio entre precio y tranquilidad.",
+    "tasaAnual": 0.06,
+    "recomendado": true,
+    "coberturas": ["Robo con violencia", "Rotura de pantalla"],
+    "noIncluye": ["Rotura total", "Hurto / pérdida"]
+  },
+  {
+    "id": "premium",
+    "nombre": "Premium",
+    "descripcion": "Cobertura total para no preocuparte por nada.",
+    "tasaAnual": 0.09,
+    "recomendado": false,
+    "coberturas": ["Robo con violencia", "Rotura total", "Hurto / pérdida"],
+    "noIncluye": []
+  }
+]
