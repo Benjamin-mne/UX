@@ -11,7 +11,7 @@ npm run dev
 
 Abrir `http://localhost:5173`.
 
-**Sitio publicado:** _(completar con la URL de GitHub Pages, Netlify o Firebase Hosting)._
+**Sitio publicado:** https://tp5-ux.netlify.app
 
 ## Scripts
 
