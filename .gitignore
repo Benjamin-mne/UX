@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.vercel
+.vscode/
+.idea/
+
+figma-plugin/
+Trabajo_Final_UXUI_Portfolio_Web.pdf
+assets/img/profile.png
+assets/img/retrato.svg
