@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe genérico de la Landing Page Miel</title>
+  <desc id="desc">Boceto de baja fidelidad basado en la landing publicada de La Sanjosesina: navegación fija, hero con video, seis fichas de producto, historia con slider, formulario de contacto y acceso flotante a WhatsApp.</desc>
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" stroke="#141414" stroke-opacity=".055"/>
+    </pattern>
+    <pattern id="comb" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 2L56 17V47L30 62L4 47V17Z" fill="none" stroke="#710000" stroke-opacity=".07"/>
+    </pattern>
+    <linearGradient id="hero" x1="40" y1="96" x2="1160" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C1914"/>
+      <stop offset=".55" stop-color="#2A2112"/>
+      <stop offset="1" stop-color="#15130F"/>
+    </linearGradient>
+    <linearGradient id="products" x1="600" y1="324" x2="600" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4D35E"/>
+      <stop offset="1" stop-color="#FFF1BE"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4E8C8"/>
+    </linearGradient>
+    <linearGradient id="footer" x1="600" y1="720" x2="600" y2="744" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DED8CC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F7F5F0"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+
+  <text x="40" y="52" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">WIREFRAME / LANDING MIEL</text>
+  <text x="40" y="72" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.5">BAJA FIDELIDAD · ESTRUCTURA DE LA LANDING PUBLICADA</text>
+  <text x="1160" y="52" text-anchor="end" fill="#C36F09" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">MIEL / 2026</text>
+  <text x="1160" y="70" text-anchor="end" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.2">NAV · HERO · PRODUCTOS · HISTORIA · CONTACTO</text>
+
+  <rect x="40" y="96" width="1120" height="648" rx="8" fill="#FFFFFF" stroke="#141414" stroke-opacity=".2"/>
+  <rect x="40" y="96" width="1120" height="210" fill="url(#hero)"/>
+  <rect x="40" y="96" width="1120" height="210" fill="#C36F09" fill-opacity=".05"/>
+
+  <path d="M40 154C160 132 240 178 360 156C480 134 560 178 680 156C800 134 880 178 1000 156C1080 141 1120 150 1160 144V210H40V154Z" fill="#FFFFFF" fill-opacity=".025"/>
+  <path d="M40 186C180 160 300 212 440 186C580 160 700 212 840 186C980 160 1080 202 1160 180V306H40V186Z" fill="#FFFFFF" fill-opacity=".02"/>
+  <circle cx="1004" cy="156" r="86" fill="#EEBA0B" fill-opacity=".06"/>
+  <circle cx="1004" cy="156" r="56" fill="none" stroke="#EEBA0B" stroke-opacity=".14"/>
+
+  <rect x="56" y="110" width="28" height="28" rx="6" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-opacity=".4"/>
+  <path d="M70 117L79 122V132L70 137L61 132V122L70 117Z" stroke="#EEBA0B" stroke-width="1.4"/>
+  <text x="96" y="128" fill="#FFFFFF" fill-opacity=".72" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">MIEL / LA SANJOSESINA</text>
+  <text x="640" y="128" fill="#FFFFFF" fill-opacity=".55" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.2">PRODUCTOS</text>
+  <text x="760" y="128" fill="#FFFFFF" fill-opacity=".55" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.2">CONTACTO</text>
+  <text x="880" y="128" fill="#FFFFFF" fill-opacity=".55" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.2">SOBRE NOSOTROS</text>
+  <rect x="1080" y="113" width="56" height="22" rx="4" fill="#FFFFFF" fill-opacity=".06" stroke="#FFFFFF" stroke-opacity=".18"/>
+
+  <text x="600" y="154" text-anchor="middle" fill="#EEBA0B" fill-opacity=".8" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.6">HERO / VIDEO FULLSCREEN + PROPUESTA DE VALOR</text>
+  <rect x="390" y="170" width="420" height="18" rx="4" fill="#FFFFFF" fill-opacity=".18"/>
+  <rect x="430" y="196" width="340" height="14" rx="4" fill="#FFFFFF" fill-opacity=".12"/>
+  <rect x="512" y="222" width="176" height="8" rx="4" fill="#FFFFFF" fill-opacity=".08"/>
+  <path d="M536 248H612L624 264L612 280H536L524 264L536 248Z" fill="#EEBA0B" stroke="#F4D35E"/>
+  <rect x="554" y="260" width="42" height="8" rx="4" fill="#710000" fill-opacity=".55"/>
+  <text x="600" y="294" text-anchor="middle" fill="#FFFFFF" fill-opacity=".35" font-family="'JetBrains Mono', monospace" font-size="6" letter-spacing="1.2">VIDEO DE FONDO · FILTRO OSCURO · TEXTO CENTRADO</text>
+
+  <path d="M40 306C106 294 158 318 224 306C290 294 342 318 408 306C474 294 526 318 592 306C658 294 710 318 776 306C842 294 894 318 960 306C1026 294 1094 312 1160 300V324H40V306Z" fill="#EEBA0B"/>
+  <path d="M40 312C106 300 158 324 224 312C290 300 342 324 408 312C474 300 526 324 592 312C658 300 710 324 776 312C842 300 894 324 960 312C1026 300 1094 318 1160 306V324H40V312Z" fill="#F4D35E" fill-opacity=".72"/>
+  <path d="M40 317C106 305 158 329 224 317C290 305 342 329 408 317C474 305 526 329 592 317C658 305 710 329 776 317C842 305 894 329 960 317C1026 305 1094 323 1160 311V324H40V317Z" fill="#FFF1BE" fill-opacity=".75"/>
+
+  <rect x="40" y="324" width="1120" height="272" fill="url(#products)"/>
+  <rect x="40" y="324" width="1120" height="272" fill="url(#comb)"/>
+  <text x="72" y="342" fill="#710000" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.4">PRODUCTOS / GRILLA 3 × 2 · FICHAS CON IMAGEN CIRCULAR, PRECIO Y DESCRIPCIÓN</text>
+  <text x="1128" y="342" text-anchor="end" fill="#710000" fill-opacity=".65" font-family="'JetBrains Mono', monospace" font-size="7" letter-spacing="1">06 FICHAS</text>
+
+  <g>
+    <rect x="72" y="354" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="86" y="364" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="240" cy="392" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <rect x="230" y="380" width="20" height="24" rx="4" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="234" y="376" width="12" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="86" y="424" width="58" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="86" y="436" width="122" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="86" y="450" width="196" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="86" y="458" width="168" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="384" y="450" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">01</text>
+  </g>
+  <g>
+    <rect x="432" y="354" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="446" y="364" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="600" cy="392" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <rect x="590" y="380" width="20" height="24" rx="4" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="594" y="376" width="12" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="446" y="424" width="64" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="446" y="436" width="136" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="446" y="450" width="190" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="446" y="458" width="158" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="744" y="450" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">02</text>
+  </g>
+  <g>
+    <rect x="792" y="354" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="806" y="364" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="960" cy="392" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <rect x="950" y="380" width="20" height="24" rx="4" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="954" y="376" width="12" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="806" y="424" width="58" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="806" y="436" width="128" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="806" y="450" width="202" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="806" y="458" width="172" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="1104" y="450" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">03</text>
+  </g>
+
+  <g>
+    <rect x="72" y="474" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="86" y="484" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="240" cy="512" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <path d="M228 518V508C228 504 231 501 235 501H245C249 501 252 504 252 508V518" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="232" y="497" width="16" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="86" y="544" width="62" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="86" y="556" width="130" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="86" y="570" width="188" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="86" y="578" width="154" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="384" y="570" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">04</text>
+  </g>
+  <g>
+    <rect x="432" y="474" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="446" y="484" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="600" cy="512" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <path d="M588 518V508C588 504 591 501 595 501H605C609 501 612 504 612 508V518" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="592" y="497" width="16" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="446" y="544" width="56" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="446" y="556" width="142" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="446" y="570" width="196" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="446" y="578" width="160" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="744" y="570" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">05</text>
+  </g>
+  <g>
+    <rect x="792" y="474" width="336" height="108" rx="6" fill="url(#card)" stroke="#710000" stroke-opacity=".14"/>
+    <rect x="806" y="484" width="54" height="16" rx="2" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+    <circle cx="960" cy="512" r="28" fill="#F7F5F0" stroke="#710000" stroke-opacity=".16"/>
+    <path d="M948 518V508C948 504 951 501 955 501H965C969 501 972 504 972 508V518" fill="#C36F09" fill-opacity=".12" stroke="#C36F09" stroke-opacity=".45"/>
+    <rect x="952" y="497" width="16" height="5" rx="2" fill="#C36F09" fill-opacity=".35"/>
+    <rect x="806" y="544" width="60" height="5" rx="2.5" fill="#710000" fill-opacity=".24"/>
+    <rect x="806" y="556" width="136" height="8" rx="4" fill="#710000" fill-opacity=".18"/>
+    <rect x="806" y="570" width="200" height="4" rx="2" fill="#141414" fill-opacity=".08"/>
+    <rect x="806" y="578" width="170" height="4" rx="2" fill="#141414" fill-opacity=".06"/>
+    <text x="1104" y="570" text-anchor="end" fill="#710000" fill-opacity=".4" font-family="'JetBrains Mono', monospace" font-size="6">06</text>
+  </g>
+
+  <path d="M40 596C106 584 158 608 224 596C290 584 342 608 408 596C474 584 526 608 592 596C658 584 710 608 776 596C842 584 894 608 960 596C1026 584 1094 602 1160 590V608H40V596Z" fill="#FFFFFF"/>
+  <path d="M40 602C106 590 158 614 224 602C290 590 342 614 408 602C474 590 526 614 592 602C658 590 710 614 776 602C842 590 894 614 960 602C1026 590 1094 608 1160 596V608H40V602Z" fill="#FFFFFF" fill-opacity=".65"/>
+
+  <rect x="40" y="608" width="1120" height="112" fill="#FFFFFF"/>
+  <text x="72" y="624" fill="#710000" fill-opacity=".7" font-family="'JetBrains Mono', monospace" font-size="7" letter-spacing="1.3">SOBRE NOSOTROS / HISTORIA + SLIDER DE FOTOS</text>
+  <rect x="72" y="634" width="192" height="10" rx="4" fill="#141414" fill-opacity=".13"/>
+  <rect x="72" y="650" width="640" height="5" rx="2.5" fill="#141414" fill-opacity=".07"/>
+  <rect x="72" y="661" width="604" height="5" rx="2.5" fill="#141414" fill-opacity=".07"/>
+  <rect x="72" y="672" width="548" height="5" rx="2.5" fill="#141414" fill-opacity=".06"/>
+
+  <g transform="rotate(5 994 642)">
+    <rect x="958" y="606" width="72" height="72" rx="2" fill="#FFFFFF" stroke="#141414" stroke-opacity=".16"/>
+    <rect x="964" y="612" width="60" height="54" fill="#F7F5F0" stroke="#141414" stroke-opacity=".1"/>
+    <circle cx="984" cy="626" r="6" fill="#EEBA0B" fill-opacity=".5"/>
+    <path d="M964 658L979 638L991 650L1001 636L1024 658V666H964V658Z" fill="#C36F09" fill-opacity=".18" stroke="#C36F09" stroke-opacity=".4"/>
+    <text x="994" y="674" text-anchor="middle" fill="#710000" fill-opacity=".5" font-family="'JetBrains Mono', monospace" font-size="5">FOTO</text>
+  </g>
+
+  <rect x="72" y="684" width="1056" height="2" fill="#EEBA0B"/>
+  <text x="72" y="698" fill="#710000" fill-opacity=".7" font-family="'JetBrains Mono', monospace" font-size="7" letter-spacing="1.3">CONTACTO / FORMULARIO</text>
+  <text x="220" y="698" fill="#141414" fill-opacity=".35" font-family="'JetBrains Mono', monospace" font-size="6">NOMBRE</text>
+  <rect x="272" y="697" width="168" height="1" fill="#141414" fill-opacity=".16"/>
+  <text x="470" y="698" fill="#141414" fill-opacity=".35" font-family="'JetBrains Mono', monospace" font-size="6">EMAIL</text>
+  <rect x="516" y="697" width="168" height="1" fill="#141414" fill-opacity=".16"/>
+  <text x="714" y="698" fill="#141414" fill-opacity=".35" font-family="'JetBrains Mono', monospace" font-size="6">MENSAJE</text>
+  <rect x="774" y="697" width="226" height="1" fill="#141414" fill-opacity=".16"/>
+  <rect x="1018" y="687" width="74" height="20" rx="3" fill="#EEBA0B" stroke="#C36F09" stroke-opacity=".55"/>
+  <rect x="1038" y="695" width="34" height="5" rx="2.5" fill="#710000" fill-opacity=".45"/>
+
+  <rect x="40" y="720" width="1120" height="24" fill="url(#footer)"/>
+  <path d="M40 720H1160" stroke="#141414" stroke-opacity=".1"/>
+  <rect x="72" y="730" width="54" height="5" rx="2.5" fill="#141414" fill-opacity=".1"/>
+  <rect x="1068" y="730" width="60" height="5" rx="2.5" fill="#141414" fill-opacity=".08"/>
+
+  <circle cx="1124" cy="701" r="15" fill="#6EBF3A"/>
+  <path d="M1119 696C1117 699 1118 703 1121 706C1124 709 1128 710 1131 708L1128 705L1125 706C1124 705 1122 703 1121 701L1122 698L1119 696Z" fill="#FFFFFF"/>
+
+  <path d="M40 766H1160" stroke="#141414" stroke-opacity=".12"/>
+  <text x="40" y="784" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">DECISIONES: NAV FIJA SOBRE HERO · VIDEO OSCURO + CTA · ONDAS DE TRANSICIÓN · PRODUCTOS EN 3 × 2 · HISTORIA + SLIDER · FORMULARIO · WHATSAPP FLOTANTE</text>
+</svg>

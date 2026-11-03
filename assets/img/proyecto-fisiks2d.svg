@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe genérico de experimento para fisiks2D</title>
+  <desc id="desc">Boceto de baja fidelidad con canvas de simulación, formas geométricas, editor de código y barra de tests.</desc>
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" stroke="#141414" stroke-opacity=".055"/>
+    </pattern>
+    <pattern id="canvas-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" stroke="#141414" stroke-opacity=".07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10V0Z" fill="#C2410C"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#F7F5F0"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+
+  <text x="40" y="52" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">WIREFRAME / EXPERIMENTO</text>
+  <text x="40" y="72" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.5">BAJA FIDELIDAD · CANVAS + CÓDIGO</text>
+  <text x="1160" y="52" text-anchor="end" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">03 / 03</text>
+
+  <rect x="40" y="96" width="1120" height="648" rx="8" fill="#FFFFFF" stroke="#141414" stroke-opacity=".2"/>
+  <rect x="40" y="96" width="1120" height="64" rx="8" fill="#F0ECE4"/>
+  <path d="M40 160H1160" stroke="#141414" stroke-opacity=".14"/>
+  <rect x="64" y="118" width="18" height="18" rx="4" fill="#C2410C" fill-opacity=".18" stroke="#C2410C"/>
+  <rect x="94" y="122" width="116" height="10" rx="5" fill="#141414" fill-opacity=".12"/>
+  <rect x="94" y="138" width="68" height="6" rx="3" fill="#141414" fill-opacity=".06"/>
+  <rect x="560" y="116" width="56" height="24" rx="5" fill="#FFFFFF" stroke="#141414" stroke-opacity=".16"/>
+  <rect x="626" y="116" width="72" height="24" rx="5" fill="#FFFFFF" stroke="#141414" stroke-opacity=".16"/>
+  <rect x="708" y="116" width="56" height="24" rx="5" fill="#C2410C" fill-opacity=".12" stroke="#C2410C"/>
+  <circle cx="1068" cy="128" r="14" fill="#141414" fill-opacity=".04" stroke="#141414" stroke-opacity=".14"/>
+  <circle cx="1104" cy="128" r="14" fill="#141414" fill-opacity=".04" stroke="#141414" stroke-opacity=".14"/>
+
+  <rect x="72" y="184" width="650" height="400" rx="6" fill="#F7F5F0" stroke="#141414" stroke-opacity=".16"/>
+  <rect x="72" y="184" width="650" height="400" rx="6" fill="url(#canvas-grid)"/>
+  <text x="88" y="206" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">CANVAS / SIMULACIÓN</text>
+  <rect x="578" y="196" width="128" height="22" rx="5" fill="#FFFFFF" stroke="#141414" stroke-opacity=".12"/>
+  <rect x="592" y="203" width="38" height="8" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="642" y="203" width="48" height="8" rx="4" fill="#C2410C" fill-opacity=".28"/>
+
+  <circle cx="210" cy="338" r="48" fill="#141414" fill-opacity=".04" stroke="#141414" stroke-opacity=".4" stroke-width="1.5"/>
+  <circle cx="210" cy="338" r="5" fill="#C2410C"/>
+  <rect x="366" y="300" width="88" height="88" rx="4" fill="#C2410C" fill-opacity=".05" stroke="#141414" stroke-opacity=".4" stroke-width="1.5" transform="rotate(-8 410 344)"/>
+  <path d="M556 404L604 318L652 404Z" fill="#141414" fill-opacity=".04" stroke="#141414" stroke-opacity=".4" stroke-width="1.5"/>
+  <path d="M232 310L330 254" stroke="#C2410C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M440 358L520 382" stroke="#C2410C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M598 392L604 350" stroke="#C2410C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="194" y="322" width="32" height="32" fill="none" stroke="#C2410C" stroke-opacity=".55" stroke-dasharray="3 3"/>
+  <rect x="348" y="282" width="124" height="124" fill="none" stroke="#C2410C" stroke-opacity=".4" stroke-dasharray="3 3" transform="rotate(-8 410 344)"/>
+  <rect x="538" y="300" width="132" height="122" fill="none" stroke="#C2410C" stroke-opacity=".4" stroke-dasharray="3 3"/>
+  <text x="210" y="416" text-anchor="middle" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">CUERPO / A</text>
+  <text x="410" y="442" text-anchor="middle" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">CUERPO / B</text>
+  <text x="604" y="452" text-anchor="middle" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">CUERPO / C</text>
+
+  <rect x="88" y="528" width="198" height="38" rx="5" fill="#FFFFFF" stroke="#141414" stroke-opacity=".14"/>
+  <rect x="102" y="542" width="58" height="7" rx="3.5" fill="#141414" fill-opacity=".08"/>
+  <rect x="172" y="538" width="46" height="14" rx="7" fill="#141414" fill-opacity=".06"/>
+  <rect x="226" y="538" width="42" height="14" rx="7" fill="#C2410C" fill-opacity=".2"/>
+  <rect x="298" y="528" width="198" height="38" rx="5" fill="#FFFFFF" stroke="#141414" stroke-opacity=".14"/>
+  <rect x="312" y="542" width="68" height="7" rx="3.5" fill="#141414" fill-opacity=".08"/>
+  <rect x="392" y="538" width="36" height="14" rx="7" fill="#141414" fill-opacity=".06"/>
+  <rect x="436" y="538" width="44" height="14" rx="7" fill="#141414" fill-opacity=".06"/>
+  <path d="M72 512H722" stroke="#141414" stroke-opacity=".1"/>
+
+  <rect x="742" y="184" width="354" height="400" rx="6" fill="#0B0F14"/>
+  <text x="760" y="206" fill="#FB923C" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">EDITOR / TYPESCRIPT</text>
+  <circle cx="1062" cy="200" r="4" fill="#FB923C" fill-opacity=".5"/>
+  <circle cx="1076" cy="200" r="4" fill="#F5F5F4" fill-opacity=".2"/>
+  <path d="M742 220H1096" stroke="#F5F5F4" stroke-opacity=".1"/>
+  <text x="760" y="244" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">01</text>
+  <text x="760" y="262" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">02</text>
+  <text x="760" y="280" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">03</text>
+  <text x="760" y="298" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">04</text>
+  <text x="760" y="316" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">05</text>
+  <text x="760" y="334" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">06</text>
+  <text x="760" y="352" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">07</text>
+  <text x="760" y="370" fill="#F5F5F4" fill-opacity=".28" font-family="'JetBrains Mono', monospace" font-size="7">08</text>
+  <text x="776" y="244" width="220" fill="#FB923C" fill-opacity=".55" font-family="'JetBrains Mono', monospace" font-size="7">import · vector · world</text>
+  <rect x="776" y="252" width="168" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".18"/>
+  <rect x="790" y="270" width="126" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="790" y="288" width="198" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="790" y="306" width="152" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="776" y="324" width="188" height="5" rx="2.5" fill="#FB923C" fill-opacity=".28"/>
+  <rect x="790" y="342" width="102" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="790" y="360" width="174" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="776" y="378" width="116" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".18"/>
+  <rect x="776" y="396" width="206" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="790" y="414" width="138" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="776" y="432" width="92" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".18"/>
+  <rect x="760" y="476" width="318" height="82" rx="5" fill="#161B22" stroke="#F5F5F4" stroke-opacity=".1"/>
+  <text x="776" y="496" fill="#FB923C" font-family="'JetBrains Mono', monospace" font-size="7">CONSOLA</text>
+  <rect x="776" y="510" width="136" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".12"/>
+  <rect x="776" y="524" width="214" height="5" rx="2.5" fill="#F5F5F4" fill-opacity=".08"/>
+  <rect x="776" y="538" width="96" height="5" rx="2.5" fill="#FB923C" fill-opacity=".28"/>
+
+  <rect x="72" y="604" width="1024" height="84" rx="6" fill="#FFFFFF" stroke="#141414" stroke-opacity=".14"/>
+  <text x="90" y="626" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">TESTS / ESTADO</text>
+  <circle cx="95" cy="650" r="4" fill="#C2410C" fill-opacity=".5"/>
+  <rect x="108" y="646" width="108" height="7" rx="3.5" fill="#141414" fill-opacity=".08"/>
+  <rect x="108" y="660" width="72" height="6" rx="3" fill="#141414" fill-opacity=".05"/>
+  <circle cx="288" cy="650" r="4" fill="#C2410C" fill-opacity=".5"/>
+  <rect x="302" y="646" width="92" height="7" rx="3.5" fill="#141414" fill-opacity=".08"/>
+  <rect x="302" y="660" width="64" height="6" rx="3" fill="#141414" fill-opacity=".05"/>
+  <circle cx="462" cy="650" r="4" fill="#C2410C" fill-opacity=".5"/>
+  <rect x="476" y="646" width="120" height="7" rx="3.5" fill="#141414" fill-opacity=".08"/>
+  <rect x="476" y="660" width="86" height="6" rx="3" fill="#141414" fill-opacity=".05"/>
+  <rect x="956" y="626" width="118" height="40" rx="20" fill="#C2410C" fill-opacity=".12" stroke="#C2410C"/>
+  <rect x="990" y="644" width="50" height="6" rx="3" fill="#C2410C" fill-opacity=".45"/>
+
+  <path d="M40 716H1160" stroke="#141414" stroke-opacity=".12"/>
+  <text x="40" y="734" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">DECISIONES: CANVAS CENTRAL · CONTROLES DE SIMULACIÓN · EDITOR LATERAL · RESULTADOS DE TESTING</text>
+  <path d="M40 766H1160" stroke="#141414" stroke-opacity=".12"/>
+  <text x="40" y="784" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">PROCESO: DEFINIR CUERPOS · APLICAR FUERZAS · EJECUTAR · VERIFICAR COLISIONES</text>
+</svg>

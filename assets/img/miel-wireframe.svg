@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe de la Landing Page Miel</title>
+  <desc id="desc">Boceto de baja fidelidad con header, hero, productos, historia y contacto.</desc>
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" stroke="#141414" stroke-opacity=".055"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10V0Z" fill="#C2410C"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#F7F5F0"/>
+  <rect width="1000" height="700" fill="url(#grid)"/>
+
+  <text x="40" y="52" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">WIREFRAME / LANDING MIEL</text>
+  <text x="40" y="72" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.5">BAJA FIDELIDAD · ESTRUCTURA Y JERARQUÍA</text>
+  <text x="960" y="52" text-anchor="end" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">01 / 02</text>
+
+  <rect x="40" y="96" width="920" height="568" rx="6" fill="#FFFFFF" stroke="#141414" stroke-opacity=".18"/>
+  <rect x="40" y="96" width="920" height="54" fill="#FFFFFF" stroke="#141414" stroke-opacity=".18"/>
+  <rect x="62" y="112" width="92" height="20" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="560" y="114" width="58" height="14" rx="3" fill="#141414" fill-opacity=".08"/>
+  <rect x="634" y="114" width="58" height="14" rx="3" fill="#141414" fill-opacity=".08"/>
+  <rect x="708" y="114" width="58" height="14" rx="3" fill="#141414" fill-opacity=".08"/>
+  <rect x="790" y="108" width="146" height="28" rx="14" fill="#C2410C" fill-opacity=".12" stroke="#C2410C"/>
+
+  <rect x="64" y="184" width="118" height="22" rx="11" fill="#141414" fill-opacity=".07"/>
+  <rect x="64" y="226" width="350" height="36" rx="4" fill="#141414" fill-opacity=".1"/>
+  <rect x="64" y="274" width="290" height="24" rx="4" fill="#141414" fill-opacity=".1"/>
+  <rect x="64" y="308" width="310" height="12" rx="6" fill="#141414" fill-opacity=".06"/>
+  <rect x="64" y="328" width="260" height="12" rx="6" fill="#141414" fill-opacity=".06"/>
+  <rect x="64" y="370" width="140" height="38" rx="19" fill="#C2410C" fill-opacity=".14" stroke="#C2410C"/>
+  <rect x="216" y="370" width="128" height="38" rx="19" fill="none" stroke="#141414" stroke-opacity=".28"/>
+  <rect x="460" y="184" width="452" height="240" rx="8" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".22" stroke-dasharray="5 5"/>
+  <path d="M460 184L912 424M912 184L460 424" stroke="#141414" stroke-opacity=".12"/>
+  <text x="686" y="312" text-anchor="middle" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="9">IMAGEN / PRODUCTO PRINCIPAL</text>
+
+  <text x="64" y="470" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">PRODUCTOS</text>
+  <rect x="64" y="486" width="204" height="86" rx="6" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".22"/>
+  <rect x="80" y="500" width="48" height="58" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="140" y="506" width="96" height="12" rx="3" fill="#141414" fill-opacity=".1"/>
+  <rect x="140" y="526" width="64" height="8" rx="4" fill="#141414" fill-opacity=".06"/>
+  <rect x="140" y="544" width="46" height="10" rx="3" fill="#C2410C" fill-opacity=".35"/>
+  <rect x="286" y="486" width="204" height="86" rx="6" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".22"/>
+  <rect x="302" y="500" width="48" height="58" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="362" y="506" width="96" height="12" rx="3" fill="#141414" fill-opacity=".1"/>
+  <rect x="362" y="526" width="64" height="8" rx="4" fill="#141414" fill-opacity=".06"/>
+  <rect x="362" y="544" width="46" height="10" rx="3" fill="#C2410C" fill-opacity=".35"/>
+  <rect x="508" y="486" width="204" height="86" rx="6" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".22"/>
+  <rect x="524" y="500" width="48" height="58" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="584" y="506" width="96" height="12" rx="3" fill="#141414" fill-opacity=".1"/>
+  <rect x="584" y="526" width="64" height="8" rx="4" fill="#141414" fill-opacity=".06"/>
+  <rect x="584" y="544" width="46" height="10" rx="3" fill="#C2410C" fill-opacity=".35"/>
+  <rect x="730" y="486" width="206" height="86" rx="6" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".22"/>
+  <rect x="746" y="500" width="48" height="58" rx="4" fill="#141414" fill-opacity=".08"/>
+  <rect x="806" y="506" width="96" height="12" rx="3" fill="#141414" fill-opacity=".1"/>
+  <rect x="806" y="526" width="64" height="8" rx="4" fill="#141414" fill-opacity=".06"/>
+  <rect x="806" y="544" width="46" height="10" rx="3" fill="#C2410C" fill-opacity=".35"/>
+
+  <rect x="64" y="600" width="540" height="40" rx="5" fill="#141414" fill-opacity=".035" stroke="#141414" stroke-opacity=".18"/>
+  <text x="80" y="624" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8">BLOQUE / HISTORIA + CONFIANZA</text>
+  <rect x="624" y="600" width="312" height="40" rx="5" fill="#C2410C" fill-opacity=".12" stroke="#C2410C"/>
+  <text x="780" y="624" text-anchor="middle" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="8">CTA / WHATSAPP</text>
+
+  <path d="M428 235H452" stroke="#C2410C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="428" y="224" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="7">JERARQUÍA</text>
+
+  <rect x="40" y="674" width="920" height="1" fill="#141414" fill-opacity=".12"/>
+  <text x="40" y="692" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">DECISIONES: HERO CON PRODUCTO + CTA · GRILLA DE 4 PRODUCTOS · HISTORIA DE MARCA · CONTACTO DIRECTO</text>
+</svg>

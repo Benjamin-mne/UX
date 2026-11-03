@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Sistema visual de la Landing Page Miel</title>
+  <desc id="desc">Paleta cálida, escala tipográfica, botones y tokens de espaciado.</desc>
+  <rect width="1000" height="700" fill="#F7F5F0"/>
+  <text x="40" y="52" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">SISTEMA VISUAL / MIEL</text>
+  <text x="40" y="72" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.5">COLOR · TIPOGRAFÍA · COMPONENTES</text>
+  <text x="960" y="52" text-anchor="end" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">02 / 02</text>
+
+  <text x="40" y="116" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">PALETA</text>
+  <rect x="40" y="132" width="112" height="88" rx="8" fill="#FBF7EF" stroke="#141414" stroke-opacity=".12"/>
+  <text x="52" y="204" fill="#141414" font-family="'JetBrains Mono', monospace" font-size="7">CREAM #FBF7EF</text>
+  <rect x="164" y="132" width="112" height="88" rx="8" fill="#F5C542"/>
+  <text x="176" y="204" fill="#431407" font-family="'JetBrains Mono', monospace" font-size="7">HONEY #F5C542</text>
+  <rect x="288" y="132" width="112" height="88" rx="8" fill="#D97706"/>
+  <text x="300" y="204" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="7">AMBER #D97706</text>
+  <rect x="412" y="132" width="112" height="88" rx="8" fill="#92400E"/>
+  <text x="424" y="204" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="7">BROWN #92400E</text>
+  <rect x="536" y="132" width="112" height="88" rx="8" fill="#C2410C"/>
+  <text x="548" y="204" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="7">ORANGE #C2410C</text>
+  <rect x="660" y="132" width="112" height="88" rx="8" fill="#431407"/>
+  <text x="672" y="204" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="7">INK #431407</text>
+
+  <text x="40" y="274" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">TIPOGRAFÍA / SPACE GROTESK</text>
+  <text x="40" y="322" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-2">Miel pura</text>
+  <text x="40" y="348" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">DISPLAY / 56 / 600 / -2%</text>
+  <text x="40" y="388" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Título de sección</text>
+  <text x="40" y="408" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">HEADING / 32 / 700</text>
+  <text x="40" y="444" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="14">Texto de párrafo para productos y marca.</text>
+  <text x="40" y="462" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">BODY / 16 / 400 / 1.7</text>
+  <text x="40" y="494" fill="#C2410C" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">ETIQUETA / MONO / 11</text>
+
+  <text x="520" y="274" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">COMPONENTES</text>
+  <rect x="520" y="296" width="160" height="44" rx="22" fill="#C2410C"/>
+  <text x="600" y="323" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">VER PRODUCTOS</text>
+  <rect x="696" y="296" width="152" height="44" rx="22" fill="none" stroke="#431407" stroke-opacity=".35"/>
+  <text x="772" y="323" text-anchor="middle" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">HISTORIA</text>
+  <rect x="864" y="296" width="96" height="44" rx="22" fill="#FEF3C7"/>
+  <text x="912" y="323" text-anchor="middle" fill="#7C2D12" font-family="'JetBrains Mono', monospace" font-size="7">WHATSAPP</text>
+
+  <rect x="520" y="364" width="210" height="100" rx="10" fill="#FFFFFF" stroke="#92400E" stroke-opacity=".18"/>
+  <rect x="534" y="378" width="44" height="54" rx="6" fill="#E8A317"/>
+  <text x="590" y="398" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">Miel 500 g</text>
+  <text x="590" y="416" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="8">Origen local</text>
+  <text x="590" y="440" fill="#C2410C" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">$4.000</text>
+
+  <rect x="746" y="364" width="214" height="100" rx="10" fill="#431407"/>
+  <text x="762" y="390" fill="#F5C542" font-family="'JetBrains Mono', monospace" font-size="7" letter-spacing="1">CONTACTO DIRECTO</text>
+  <text x="762" y="418" fill="#FBF7EF" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">WhatsApp</text>
+  <text x="762" y="438" fill="#FEF3C7" font-family="Arial, Helvetica, sans-serif" font-size="9">3447 643888</text>
+  <text x="762" y="454" fill="#F5C542" font-family="'JetBrains Mono', monospace" font-size="7">CTA PRINCIPAL</text>
+
+  <text x="40" y="558" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">ESPACIADO / 8PT</text>
+  <g fill="#C2410C" fill-opacity=".18">
+    <rect x="40" y="574" width="8" height="8"/>
+    <rect x="56" y="574" width="16" height="8"/>
+    <rect x="80" y="574" width="24" height="8"/>
+    <rect x="112" y="574" width="32" height="8"/>
+    <rect x="152" y="574" width="48" height="8"/>
+    <rect x="208" y="574" width="64" height="8"/>
+    <rect x="280" y="574" width="96" height="8"/>
+  </g>
+  <text x="40" y="606" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="7">8 · 16 · 24 · 32 · 48 · 64 · 96</text>
+
+  <text x="520" y="558" fill="#57534E" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">PRINCIPIOS</text>
+  <text x="520" y="586" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="12">01 · Producto primero</text>
+  <text x="520" y="608" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="12">02 · Calidez artesanal</text>
+  <text x="520" y="630" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="12">03 · Contacto sin fricción</text>
+  <text x="520" y="652" fill="#431407" font-family="Arial, Helvetica, sans-serif" font-size="12">04 · Legibilidad y contraste</text>
+</svg>
