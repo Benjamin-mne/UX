@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Miel — Caso de estudio | Benjamín Delgado</title>
+    <meta name="description" content="Caso de estudio de la Landing Page Miel para La Sanjosesina: contexto, objetivos, proceso de diseño, sistema visual, desarrollo y resultados.">
+    <meta name="author" content="Benjamín Delgado">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F7F5F0">
+    <link rel="canonical" href="https://benjamindelgado.vercel.app/caso-estudio.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:url" content="https://benjamindelgado.vercel.app/caso-estudio.html">
+    <meta property="og:title" content="Landing Page Miel — Caso de estudio | Benjamín Delgado">
+    <meta property="og:description" content="Cómo diseñé y desarrollé una landing cálida, rápida y directa para una apícola familiar de Entre Ríos.">
+    <meta property="og:image" content="https://benjamindelgado.vercel.app/assets/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Caso de estudio Landing Page Miel — Benjamín Delgado">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Landing Page Miel — Caso de estudio">
+    <meta name="twitter:description" content="Diseño y desarrollo de una landing para La Sanjosesina, apícola familiar de San José, Entre Ríos.">
+    <meta name="twitter:image" content="https://benjamindelgado.vercel.app/assets/img/og-image.png">
+
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (error) {}
+      })();
+    </script>
+
+    <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Landing Page Miel",
+        "description": "Caso de estudio de diseño y desarrollo de una landing page para La Sanjosesina.",
+        "url": "https://benjamindelgado.vercel.app/caso-estudio.html",
+        "datePublished": "2026",
+        "author": {
+          "@type": "Person",
+          "name": "Benjamín Delgado",
+          "url": "https://benjamindelgado.vercel.app/"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="sticky top-0 z-50 border-b border-line/80 bg-bg/90 backdrop-blur-xl">
+      <div class="container-page flex h-[72px] items-center justify-between gap-5">
+        <a class="flex items-center gap-3" href="index.html" aria-label="Benjamín Delgado — Inicio">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent font-mono text-sm font-semibold tracking-tight text-on-accent">BD</span>
+          <span class="hidden leading-tight sm:block">
+            <span class="block text-sm font-semibold tracking-tight">Benjamín Delgado</span>
+            <span class="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">UX/UI · Full-stack</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Navegación principal">
+          <a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="index.html#metricas">Métricas</a>
+          <a class="nav-link" href="index.html#skills">Skills</a>
+          <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+          <a class="nav-link" href="index.html#experiencia">Trayectoria</a>
+          <a class="nav-link" href="caso-estudio.html" aria-current="page">Caso Miel</a>
+          <a class="nav-link" href="index.html#contacto">Contacto</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.66.08-.66 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.91 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.91.7.77 1.13 1.75 1.13 2.95 0 4.22-2.58 5.15-5.03 5.42.39.34.74 1.01.74 2.04 0 1.47-.01 2.66-.01 3.02 0 .29.2.64.76.53 4.36-1.45 7.51-5.57 7.51-10.43C23.02 5.24 18.27.5 12 .5Z"/>
+            </svg>
+          </a>
+          <button class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent" type="button" data-theme-toggle aria-label="Activar tema oscuro" title="Cambiar tema">
+            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+            </svg>
+            <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
+            </svg>
+          </button>
+
+          <a class="btn btn-primary btn-small hidden sm:inline-flex" href="index.html#contacto">Hablemos</a>
+
+          <button class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent lg:hidden" type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false">
+            <svg class="h-5 w-5" data-menu-icon="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+            <svg class="hidden h-5 w-5" data-menu-icon="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18"/>
+            </svg>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden border-t border-line bg-bg lg:hidden" id="mobile-menu">
+        <nav class="container-page flex flex-col gap-1 py-4" aria-label="Navegación móvil">
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#sobre-mi">
+            Sobre mí <span class="font-mono text-[10px] text-muted">01</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#metricas">
+            Métricas <span class="font-mono text-[10px] text-muted">02</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#skills">
+            Skills <span class="font-mono text-[10px] text-muted">03</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#proyectos">
+            Proyectos <span class="font-mono text-[10px] text-muted">04</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#experiencia">
+            Trayectoria <span class="font-mono text-[10px] text-muted">05</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="caso-estudio.html">
+            Caso de estudio <span class="font-mono text-[10px] text-muted">06</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="index.html#contacto">
+            Contacto <span class="font-mono text-[10px] text-muted">07</span>
+          </a>
+          <a class="btn btn-primary mt-3" href="index.html#contacto">Hablemos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="relative overflow-hidden border-b border-line" aria-labelledby="case-title">
+        <div class="blueprint-grid grid-mask absolute inset-0" aria-hidden="true"></div>
+        <div class="hero-glow absolute inset-0" aria-hidden="true"></div>
+
+        <div class="container-page relative py-12 sm:py-16 lg:py-20">
+          <nav aria-label="Migas de pan" class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+            <ol class="flex flex-wrap items-center gap-2">
+              <li><a class="transition-colors hover:text-accent" href="index.html">Portfolio</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a class="transition-colors hover:text-accent" href="index.html#proyectos">Proyectos</a></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" class="text-ink">Landing Page Miel</li>
+            </ol>
+          </nav>
+
+          <div class="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div class="reveal">
+              <div class="flex flex-wrap gap-2">
+                <span class="tag tag-accent">Caso de estudio</span>
+                <span class="tag">2026</span>
+                <span class="tag">Landing page</span>
+              </div>
+              <h1 class="display-title mt-6 max-w-[13ch]" id="case-title">Landing Page Miel</h1>
+              <p class="lead mt-6 max-w-2xl">Una presencia digital cálida para La Sanjosesina, apícola familiar de San José, Entre Ríos. Diseño y desarrollo de una landing que pone el producto, la historia y el contacto directo en el centro.</p>
+
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="https://www.lasanjosesina.com/" target="_blank" rel="noopener noreferrer">
+                  Ver sitio live
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+                <a class="btn btn-ghost" href="index.html#contacto">Hablemos</a>
+              </div>
+            </div>
+
+            <dl class="reveal reveal-delay-1 grid grid-cols-2 gap-4 border-t border-line pt-6 text-sm lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Cliente</dt>
+                <dd class="mt-1 font-medium">La Sanjosesina<span class="mt-0.5 block text-xs font-normal text-muted">Apícola Las Marías</span></dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Rol</dt>
+                <dd class="mt-1 font-medium">UX/UI + Front-end</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Stack</dt>
+                <dd class="mt-1 font-medium">Astro · Tailwind</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Estado</dt>
+                <dd class="mt-1 inline-flex items-center gap-2 font-medium"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Live · 2026</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-line bg-surface py-8 sm:py-10">
+        <div class="container-page">
+          <figure class="reveal overflow-hidden rounded-3xl border border-line bg-surface-2 shadow-card">
+            <div class="wireframe-tint">
+              <img class="w-full" src="assets/img/proyecto-miel.svg" alt="Wireframe genérico de la landing publicada de La Sanjosesina con hero, seis productos, historia y contacto" width="1200" height="800" decoding="async">
+            </div>
+            <figcaption class="flex flex-col gap-2 border-t border-line bg-bg px-5 py-4 font-mono text-[9px] uppercase tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between">
+              <span>Landing Page Miel / Wireframe</span>
+              <span>La Sanjosesina · San José, Entre Ríos</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="py-16 sm:py-20">
+        <div class="container-page grid gap-12 lg:grid-cols-[0.34fr_0.66fr] lg:gap-16">
+          <aside class="reveal lg:sticky lg:top-28 lg:self-start">
+            <p class="eyebrow">Índice</p>
+            <nav class="mt-5" aria-label="Contenido del caso de estudio">
+              <ol class="space-y-1 border-l border-line">
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#contexto">01 · Contexto</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#objetivos">02 · Objetivos</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#proceso">03 · Proceso</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#sistema">04 · Sistema visual</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#solucion">05 · Solución</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#resultados">06 · Resultados</a></li>
+                <li><a class="block border-l-2 border-transparent py-2 pl-4 text-sm text-muted transition-colors hover:border-accent hover:text-accent" href="#aprendizajes">07 · Aprendizajes</a></li>
+              </ol>
+            </nav>
+
+            <div class="mt-8 rounded-2xl border border-line bg-surface p-5">
+              <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Ficha rápida</p>
+              <dl class="mt-4 space-y-3 text-sm">
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Tipo</dt>
+                  <dd class="mt-0.5">Landing page de marca</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Productos</dt>
+                  <dd class="mt-0.5">Miel · Propóleo · Hidromiel</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Canal principal</dt>
+                  <dd class="mt-0.5">WhatsApp directo</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Enfoque</dt>
+                  <dd class="mt-0.5">Marca + producto + contacto</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+
+          <div class="min-w-0 space-y-16 sm:space-y-20">
+            <section class="reveal scroll-mt-28" id="contexto" aria-labelledby="contexto-title">
+              <p class="eyebrow">01 / Contexto</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="contexto-title">Una marca con historia, lista para mostrarse.</h2>
+              <div class="case-prose mt-6">
+                <p>La Sanjosesina es la marca comercial de <strong>Apícola Las Marías</strong>, una empresa familiar con más de <strong>40 años de trayectoria</strong> en San José, Entre Ríos. Producen miel, propóleo e hidromiel, y destinan gran parte de su producción a mercados europeos y estadounidenses.</p>
+                <p>El desafío era trasladar esa trayectoria a una presencia digital clara: mostrar los productos, explicar el origen y facilitar el contacto sin perder la calidez de una marca artesanal.</p>
+                <p>La landing funciona como una pieza de marca y de venta directa. No necesita un e-commerce complejo: necesita que la historia se entienda, que los productos se vean apetitosos y que consultar sea inmediato.</p>
+              </div>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Origen</p>
+                  <p class="mt-2 text-sm font-semibold">San José, Entre Ríos</p>
+                  <p class="mt-1 text-xs leading-5 text-muted">Tradición familiar suizo-italiana.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Producto</p>
+                  <p class="mt-2 text-sm font-semibold">Miel y derivados</p>
+                  <p class="mt-1 text-xs leading-5 text-muted">Miel, propóleo e hidromiel artesanal.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Alcance</p>
+                  <p class="mt-2 text-sm font-semibold">Calidad de exportación</p>
+                  <p class="mt-1 text-xs leading-5 text-muted">Producción local con estándar internacional.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="objetivos" aria-labelledby="objetivos-title">
+              <p class="eyebrow">02 / Objetivos</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="objetivos-title">Qué tenía que lograr la landing.</h2>
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <span class="font-mono text-[10px] text-accent">01</span>
+                  <h3 class="mt-3 text-base font-semibold">Explicar la marca</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Contar el origen, la tradición y el proceso de forma breve, sin perder profundidad.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <span class="font-mono text-[10px] text-accent">02</span>
+                  <h3 class="mt-3 text-base font-semibold">Mostrar los productos</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Presentar variedades, formatos y precios con una jerarquía fácil de escanear.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <span class="font-mono text-[10px] text-accent">03</span>
+                  <h3 class="mt-3 text-base font-semibold">Reducir la fricción</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Llevar a WhatsApp en un toque, sin formularios innecesarios.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <span class="font-mono text-[10px] text-accent">04</span>
+                  <h3 class="mt-3 text-base font-semibold">Sostener la experiencia</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Funcionar bien en mobile, cargar rápido y mantener una lectura clara.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="proceso" aria-labelledby="proceso-title">
+              <p class="eyebrow">03 / Proceso</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="proceso-title">De la estructura al detalle.</h2>
+              <div class="case-prose mt-6">
+                <p>El proceso arrancó por ordenar la información antes de elegir colores. La landing debía responder tres preguntas en pocos segundos: <strong>qué venden</strong>, <strong>quiénes son</strong> y <strong>cómo comprar o consultar</strong>.</p>
+              </div>
+
+              <div class="mt-8 overflow-hidden rounded-2xl border border-line bg-surface">
+                <div class="wireframe-tint">
+                  <img class="w-full" src="assets/img/miel-wireframe.svg" alt="Wireframe de baja fidelidad de la landing con header, hero, productos, historia y contacto" width="1000" height="700" loading="lazy" decoding="async">
+                </div>
+                <div class="flex flex-col gap-2 border-t border-line px-5 py-4 font-mono text-[9px] uppercase tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between">
+                  <span>Wireframe / Estructura y jerarquía</span>
+                  <span>01</span>
+                </div>
+              </div>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Research</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Revisión de referencias del rubro, marcas de miel y sitios de productores locales para detectar patrones y evitar lugares comunes.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Arquitectura</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Orden de bloques: propuesta de valor, productos, historia, confianza y contacto. Una sola página, sin callejones sin salida.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Diseño</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Paleta cálida, tipografía con carácter, mucho aire y el frasco como objeto protagonista.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Build &amp; QA</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Implementación con Astro y Tailwind, revisión responsive, jerarquía de encabezados, foco visible y enlaces de contacto.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="sistema" aria-labelledby="sistema-title">
+              <p class="eyebrow">04 / Sistema visual</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="sistema-title">Una paleta que sabe a miel.</h2>
+              <div class="case-prose mt-6">
+                <p>El sistema parte de una base crema y una escala de ámbar que va del dorado claro al marrón profundo. El naranja queda reservado para acciones y acentos, y el texto usa un marrón casi negro para mantener contraste y calidez.</p>
+              </div>
+
+              <div class="mt-8 overflow-hidden rounded-2xl border border-line bg-surface">
+                <img class="w-full" src="assets/img/miel-tokens.svg" alt="Sistema visual de la Landing Page Miel con paleta, tipografía, botones y espaciado" width="1000" height="700" loading="lazy" decoding="async">
+                <div class="flex flex-col gap-2 border-t border-line px-5 py-4 font-mono text-[9px] uppercase tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between">
+                  <span>Design tokens / Color y tipografía</span>
+                  <span>02</span>
+                </div>
+              </div>
+
+              <div class="mt-8 grid gap-3 sm:grid-cols-2">
+                <div class="flex items-center gap-3 rounded-xl border border-line bg-surface p-4">
+                  <span class="h-9 w-9 rounded-lg bg-[#F5C542]"></span>
+                  <div>
+                    <p class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Honey</p>
+                    <p class="text-sm font-medium">#F5C542</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-line bg-surface p-4">
+                  <span class="h-9 w-9 rounded-lg bg-[#C2410C]"></span>
+                  <div>
+                    <p class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Acción</p>
+                    <p class="text-sm font-medium">#C2410C</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-line bg-surface p-4">
+                  <span class="h-9 w-9 rounded-lg bg-[#431407]"></span>
+                  <div>
+                    <p class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Texto</p>
+                    <p class="text-sm font-medium">#431407</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-line bg-surface p-4">
+                  <span class="h-9 w-9 rounded-lg border border-line bg-[#FBF7EF]"></span>
+                  <div>
+                    <p class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Base</p>
+                    <p class="text-sm font-medium">#FBF7EF</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="solucion" aria-labelledby="solucion-title">
+              <p class="eyebrow">05 / Solución</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="solucion-title">Producto primero, contacto a un toque.</h2>
+              <div class="case-prose mt-6">
+                <p>La landing se organiza en cinco bloques: un hero con promesa y producto, una grilla de variedades con precios, la historia de la apícola, una franja de confianza y un cierre con contacto directo por WhatsApp.</p>
+                <ul>
+                  <li><strong>Hero:</strong> título directo, producto visible y dos acciones: ver productos o conocer la historia.</li>
+                  <li><strong>Productos:</strong> seis variedades con formato, precio y descripción breve; consulta inmediata por producto.</li>
+                  <li><strong>Historia:</strong> el relato familiar de más de 40 años y el origen en San José, Entre Ríos.</li>
+                  <li><strong>Contacto:</strong> WhatsApp como canal principal, sin formularios que agreguen pasos.</li>
+                  <li><strong>Mobile:</strong> una columna, targets grandes y una jerarquía que prioriza producto y acción.</li>
+                </ul>
+              </div>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Antes</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Información dispersa, sin una jerarquía clara entre marca, producto y contacto.</p>
+                </div>
+                <div class="rounded-2xl border border-line bg-surface p-5">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">Después</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Una sola página, con el producto al frente y el contacto resuelto en un toque.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="resultados" aria-labelledby="resultados-title">
+              <p class="eyebrow">06 / Resultados</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="resultados-title">Una pieza publicada y mantenible.</h2>
+              <div class="case-prose mt-6">
+                <p>El sitio quedó publicado en <a href="https://www.lasanjosesina.com/" target="_blank" rel="noopener noreferrer">lasanjosesina.com</a> y funciona como carta de presentación de la marca. La implementación prioriza claridad, velocidad y facilidad de actualización.</p>
+              </div>
+
+              <dl class="mt-8 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+                <div class="bg-surface p-5">
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Productos</dt>
+                  <dd class="mt-2 text-2xl font-semibold">6 variedades</dd>
+                  <dd class="mt-1 text-xs text-muted">Miel, propóleo e hidromiel.</dd>
+                </div>
+                <div class="bg-surface p-5">
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Contacto</dt>
+                  <dd class="mt-2 text-2xl font-semibold">WhatsApp</dd>
+                  <dd class="mt-1 text-xs text-muted">Canal principal sin fricción.</dd>
+                </div>
+                <div class="bg-surface p-5">
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Experiencia</dt>
+                  <dd class="mt-2 text-2xl font-semibold">Responsive</dd>
+                  <dd class="mt-1 text-xs text-muted">Diseñada desde mobile primero.</dd>
+                </div>
+                <div class="bg-surface p-5">
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Base técnica</dt>
+                  <dd class="mt-2 text-2xl font-semibold">Astro</dd>
+                  <dd class="mt-1 text-xs text-muted">HTML liviano y SEO técnico.</dd>
+                </div>
+              </dl>
+
+              <p class="mt-4 text-xs leading-6 text-muted">No se incluyen métricas de conversión porque el proyecto no contó con instrumentación analítica al momento de la entrega.</p>
+            </section>
+
+            <section class="reveal scroll-mt-28" id="aprendizajes" aria-labelledby="aprendizajes-title">
+              <p class="eyebrow">07 / Aprendizajes</p>
+              <h2 class="section-title mt-4 max-w-2xl" id="aprendizajes-title">Lo que me dejó este proyecto.</h2>
+              <div class="case-prose mt-6">
+                <p>El mayor aprendizaje fue entender que una landing de marca no se resuelve solo con estética: necesita una estructura que sostenga el relato y una acción clara que no compita con nada.</p>
+                <p>También reforcé la importancia de diseñar con el contenido real desde el principio. Los nombres de los productos, los precios y las descripciones son parte del diseño, no un relleno que aparece al final.</p>
+                <p>En lo técnico, trabajar con Astro y Tailwind me permitió mantener el sitio liviano y ordenado, con componentes reutilizables y una base fácil de actualizar.</p>
+              </div>
+
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-small" href="https://www.lasanjosesina.com/" target="_blank" rel="noopener noreferrer">Ver sitio live ↗</a>
+                <a class="btn btn-ghost btn-small" href="index.html#proyectos">Volver a proyectos</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-line bg-surface py-16 sm:py-20" aria-labelledby="otros-title">
+        <div class="container-page">
+          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div class="reveal">
+              <p class="eyebrow">Otros proyectos</p>
+              <h2 class="section-title mt-4" id="otros-title">Tres formas distintas de resolver.</h2>
+            </div>
+            <p class="reveal reveal-delay-1 max-w-sm text-sm leading-7 text-muted">Aplicaciones full-stack, colaboración en tiempo real y un motor de física 2D.</p>
+          </div>
+
+          <div class="mt-10 space-y-6">
+            <article class="reveal scroll-mt-28 overflow-hidden rounded-3xl border border-line bg-bg" id="comparsa" aria-labelledby="comparsa-title">
+              <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+                <div class="wireframe-tint overflow-hidden border-b border-line bg-surface-2 lg:border-b-0 lg:border-r">
+                  <img class="h-full w-full object-cover" src="assets/img/proyecto-comparsa.svg" alt="Wireframe genérico del panel de gestión de Comparsa de Carnaval con navegación, métricas y tabla de registros" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6 sm:p-8 lg:p-10">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="tag">01 / Web app</span>
+                    <span class="tag">2023</span>
+                  </div>
+                  <h3 class="mt-5 text-2xl font-semibold tracking-tight sm:text-3xl" id="comparsa-title">Comparsa de Carnaval</h3>
+                  <p class="mt-4 text-sm leading-7 text-muted">Sistema de gestión para una comparsa: inscripciones, documentación, generación de PDFs y envío de correos. El objetivo era reemplazar planillas y mensajes sueltos por un flujo único.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Resultado</span> · Un solo flujo para inscripciones, PDFs y correos.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">React</li>
+                    <li class="tag">Redux</li>
+                    <li class="tag">Express</li>
+                    <li class="tag">MongoDB</li>
+                    <li class="tag">PDF-Lib</li>
+                  </ul>
+                  <dl class="mt-6 grid grid-cols-2 gap-4 border-t border-line pt-5 text-sm">
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Rol</dt>
+                      <dd class="mt-1 font-medium">Full-stack</dd>
+                    </div>
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Foco</dt>
+                      <dd class="mt-1 font-medium">Automatización</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal scroll-mt-28 overflow-hidden rounded-3xl border border-line bg-bg" id="espacios" aria-labelledby="espacios-title">
+              <div class="grid lg:grid-cols-[1.1fr_0.9fr]">
+                <div class="order-2 p-6 sm:p-8 lg:order-1 lg:p-10">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="tag">02 / Colaboración</span>
+                    <span class="tag">2023</span>
+                  </div>
+                  <h3 class="mt-5 text-2xl font-semibold tracking-tight sm:text-3xl" id="espacios-title">Espacios de Trabajo</h3>
+                  <p class="mt-4 text-sm leading-7 text-muted">Tablero colaborativo para un sello discográfico: kanban, calendario e inventario conectados en tiempo real. Las actualizaciones se sincronizan entre personas sin recargar la página.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Resultado</span> · Equipo coordinado en un tablero sin recargas.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">Socket.io</li>
+                    <li class="tag">Node.js</li>
+                    <li class="tag">Express</li>
+                    <li class="tag">Tiempo real</li>
+                  </ul>
+                  <dl class="mt-6 grid grid-cols-2 gap-4 border-t border-line pt-5 text-sm">
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Rol</dt>
+                      <dd class="mt-1 font-medium">Full-stack</dd>
+                    </div>
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Foco</dt>
+                      <dd class="mt-1 font-medium">Tiempo real</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="wireframe-tint order-1 overflow-hidden border-b border-line bg-surface-2 lg:order-2 lg:border-b-0 lg:border-l">
+                  <img class="h-full w-full object-cover" src="assets/img/proyecto-espacios.svg" alt="Wireframe genérico del tablero colaborativo de Espacios de Trabajo con columnas y tarjetas" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal scroll-mt-28 overflow-hidden rounded-3xl border border-line bg-bg" id="fisiks2d" aria-labelledby="fisiks2d-title">
+              <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+                <div class="wireframe-tint overflow-hidden border-b border-line bg-surface-2 lg:border-b-0 lg:border-r">
+                  <img class="h-full w-full object-cover" src="assets/img/proyecto-fisiks2d.svg" alt="Wireframe genérico del editor de física 2D de fisiks2D con canvas, formas geométricas y código" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6 sm:p-8 lg:p-10">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="tag">03 / Open source</span>
+                    <span class="tag">2024</span>
+                  </div>
+                  <h3 class="mt-5 text-2xl font-semibold tracking-tight sm:text-3xl" id="fisiks2d-title">fisiks2D</h3>
+                  <p class="mt-4 text-sm leading-7 text-muted">Motor de física 2D escrito en TypeScript para aprender y experimentar: vectores, colisiones AABB, integración en canvas y una suite de tests con Vitest.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Aprendizaje</span> · Física, canvas y testing verificable.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">TypeScript</li>
+                    <li class="tag">Canvas</li>
+                    <li class="tag">Vitest</li>
+                    <li class="tag">Open source</li>
+                  </ul>
+                  <div class="mt-6 flex flex-wrap gap-3 border-t border-line pt-5">
+                    <a class="btn btn-ghost btn-small" href="https://github.com/Benjamin-mne/fisiks2D" target="_blank" rel="noopener noreferrer">Ver repositorio ↗</a>
+                    <a class="btn btn-ghost btn-small" href="index.html#contacto">Hablemos</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden border-b border-line py-16 sm:py-20" aria-labelledby="cta-title">
+        <div class="blueprint-grid grid-mask absolute inset-0 opacity-60" aria-hidden="true"></div>
+        <div class="container-page relative">
+          <div class="corner-frame mx-auto max-w-3xl border border-line bg-surface p-6 text-center sm:p-10">
+            <p class="eyebrow justify-center">Siguiente paso</p>
+            <h2 class="section-title mt-4" id="cta-title">¿Tenés un proyecto en mente?</h2>
+            <p class="lead mx-auto mt-4 max-w-xl">Me interesa trabajar en productos donde el diseño y el código resuelvan un problema concreto.</p>
+            <div class="mt-7 flex flex-wrap justify-center gap-3">
+              <a class="btn btn-primary" href="index.html#contacto">Hablemos</a>
+              <a class="btn btn-ghost" href="index.html#proyectos">Ver todos los proyectos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-bg py-10">
+      <div class="container-page">
+        <div class="flex flex-col gap-8 border-b border-line pb-8 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <a class="inline-flex items-center gap-3" href="index.html" aria-label="Volver al inicio">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent font-mono text-sm font-semibold text-on-accent">BD</span>
+              <span class="leading-tight">
+                <span class="block text-sm font-semibold tracking-tight">Benjamín Delgado</span>
+                <span class="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">UX/UI · Full-stack</span>
+              </span>
+            </a>
+            <p class="mt-4 max-w-sm text-sm leading-6 text-muted">Diseño y desarrollo de experiencias digitales claras, accesibles y con foco en el detalle.</p>
+          </div>
+
+          <nav aria-label="Navegación del pie de página">
+            <ul class="grid grid-cols-2 gap-x-10 gap-y-1 text-sm">
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#sobre-mi">Sobre mí</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#metricas">Métricas</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#skills">Skills</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#proyectos">Proyectos</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#experiencia">Trayectoria</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="caso-estudio.html">Caso de estudio</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="index.html#contacto">Contacto</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex flex-col gap-4 pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span data-year>2026</span> Benjamín Delgado. Hecho con HTML, Tailwind y JavaScript.</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="mailto:benjamindelgado.contacto@gmail.com">Email</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="#main">Volver arriba ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
