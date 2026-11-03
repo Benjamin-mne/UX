@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Benjamín Delgado — Portfolio 2026</title>
+  <desc id="desc">Tarjeta de presentación con fondo oscuro, grilla técnica y acentos naranjas.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#F5F5F4" stroke-opacity=".06"/>
+    </pattern>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 190) rotate(90) scale(430)">
+      <stop stop-color="#FB923C" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FB923C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB923C"/>
+      <stop offset="1" stop-color="#C2410C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0B0F14"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="10" height="630" fill="url(#bar)"/>
+
+  <path d="M72 72H132M72 72V132" stroke="#FB923C" stroke-width="2"/>
+  <path d="M1128 72H1068M1128 72V132" stroke="#FB923C" stroke-width="2"/>
+  <path d="M72 558H132M72 558V498" stroke="#FB923C" stroke-width="2"/>
+  <path d="M1128 558H1068M1128 558V498" stroke="#FB923C" stroke-width="2"/>
+
+  <circle cx="932" cy="248" r="174" stroke="#FB923C" stroke-opacity=".18" stroke-dasharray="2 12"/>
+  <circle cx="932" cy="248" r="116" stroke="#FB923C" stroke-opacity=".32"/>
+  <path d="M932 36V460M720 248H1144" stroke="#FB923C" stroke-opacity=".18"/>
+  <path d="M932 214V282M898 248H966" stroke="#FB923C" stroke-opacity=".8" stroke-width="2"/>
+
+  <text x="72" y="104" fill="#FB923C" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4">PORTFOLIO / 2026</text>
+  <text x="72" y="278" fill="#F5F5F4" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="-3">BENJAMÍN</text>
+  <text x="72" y="356" fill="#F5F5F4" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="-3">DELGADO</text>
+  <text x="76" y="410" fill="#A8A29E" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="3">DESARROLLADOR FULL-STACK</text>
+
+  <rect x="72" y="464" width="18" height="18" fill="#FB923C"/>
+  <text x="104" y="479" fill="#F5F5F4" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">DISEÑO + CÓDIGO + ACCESIBILIDAD</text>
+
+  <text x="72" y="552" fill="#A8A29E" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">BENJAMINDELGADO.CONTACTO@GMAIL.COM</text>
+
+  <text x="932" y="262" text-anchor="middle" fill="#F5F5F4" font-family="Arial, Helvetica, sans-serif" font-size="118" font-weight="700" letter-spacing="-8">BD</text>
+</svg>
