@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://benjamindelgado.vercel.app/sitemap.xml
+Sitemap: https://ux-tpf.vercel.app/sitemap.xml

@@ -15,9 +15,9 @@ Mg. Ernesto Ledesma · Entrega: 10/11/2026
 - **GitHub:** [Benjamin-mne](https://github.com/Benjamin-mne)
 - **LinkedIn:** [Benjamín Delgado](https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/)
 - **Email:** [benjamindelgado.contacto@gmail.com](mailto:benjamindelgado.contacto@gmail.com)
-- **Deploy del portfolio:** pendiente de importación en Vercel. La URL anterior no corresponde a esta versión.
+- **Deploy del portfolio:** [ux-tpf.vercel.app](https://ux-tpf.vercel.app/)
 
-El sitio está implementado. Falta publicar esta rama en Vercel, actualizar la URL final en metadata y ejecutar el test de usabilidad con personas.
+El portfolio está publicado. Se revisaron visualmente la home y el caso en desktop; el caso también se comprobó a 375 px sin overflow horizontal. La metadata del repositorio ya usa la URL publicada, pero el deploy activo todavía sirve la metadata anterior hasta que se publique este cambio.
 
 ## El problema
 
@@ -183,7 +183,7 @@ Métricas mobile de la home:
 - CLS: 0
 - Speed Index: 0.8 s
 
-Los reportes completos están en [`docs/lighthouse/`](docs/lighthouse/). Son mediciones locales, no una garantía de producción. Deben repetirse sobre la URL final de Vercel.
+Los reportes completos están en [`docs/lighthouse/`](docs/lighthouse/). Son mediciones locales, no una garantía de producción. **Pendiente:** repetir Lighthouse sobre la URL de Vercel.
 
 ### Capturas y comparativas
 
@@ -290,7 +290,7 @@ npm run generate:og # regenera OG e iconos PNG
 
 ## Deploy en Vercel
 
-1. Importar `Benjamin-mne/UX` en Vercel.
+1. Importar `Benjamin-mne/UX` en Vercel (deploy publicado en [ux-tpf.vercel.app](https://ux-tpf.vercel.app/)).
 2. Seleccionar la rama `tpf`.
 3. Framework preset: **Other**.
 4. Root directory: `.`.
@@ -298,11 +298,10 @@ npm run generate:og # regenera OG e iconos PNG
 6. Build command: `npm run build`.
 7. Output directory: `.`.
 
-El `vercel.json` incluye headers de seguridad y cache para assets. Después del deploy:
+El `vercel.json` incluye headers de seguridad y cache para assets. La metadata, el sitemap y robots.txt del repositorio ya apuntan a `ux-tpf.vercel.app`; el deploy actual debe actualizarse para servir estos cambios. Después del siguiente deploy:
 
-- Actualizar `canonical`, `og:url`, `og:image`, JSON-LD, `sitemap.xml` y `robots.txt`.
 - Repetir Lighthouse sobre la URL de producción.
-- Revisar que `/`, `/caso-estudio.html` y `/404.html` respondan correctamente.
+- `/`, `/caso-estudio.html` y `/404.html` respondieron correctamente en el deploy actual.
 
 ## Proceso y documentación
 
@@ -313,12 +312,12 @@ El `vercel.json` incluye headers de seguridad y cache para assets. Después del 
 
 ## Limitaciones y pendientes
 
-- **Deploy del portfolio:** pendiente de importación en Vercel. No hay URL final de esta versión.
-- **Metadata:** `canonical`, Open Graph, JSON-LD, sitemap y robots todavía apuntan al dominio anterior hasta que exista la URL nueva.
-- **Test de usabilidad:** no ejecutado. No hay participantes, hallazgos ni tasas de éxito. No se inventaron resultados.
-- **Revisión visual manual:** pendiente de inspección final en navegador y Figma.
+- **Metadata en producción:** el código ya apunta a `ux-tpf.vercel.app`; falta publicar los cambios para reemplazar la metadata anterior que aún entrega el deploy activo.
+- **Lighthouse en producción:** pendiente repetir las mediciones sobre la URL pública.
+- **Test de usabilidad:** no ejecutado. Requiere participantes; no hay hallazgos ni tasas de éxito y no se inventaron resultados.
+- **Revisión visual:** home y caso revisados en desktop; el caso se comprobó a 375 px sin overflow. Falta comparar la versión publicada con Figma y revisar manualmente los demás anchos.
 - **Proyectos secundarios:** Comparsa, Espacios y fisiks2D usan wireframes; no incluyen capturas reales ni repositorios públicos en esta entrega.
-- **Analytics:** sin instrumentación; no se reportan conversiones.
+- **Analytics:** sin instrumentación por decisión de alcance; no se reportan conversiones.
 
 ## Uso de IA
 
