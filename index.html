@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Benjamín Delgado — Desarrollador Full-stack &amp; UX/UI</title>
+    <meta name="description" content="Portfolio de Benjamín Delgado, desarrollador full-stack de Entre Ríos, Argentina. Diseño y construyo interfaces claras, accesibles y rápidas.">
+    <meta name="author" content="Benjamín Delgado">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F7F5F0">
+    <link rel="canonical" href="https://benjamindelgado.vercel.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:url" content="https://benjamindelgado.vercel.app/">
+    <meta property="og:title" content="Benjamín Delgado — Desarrollador Full-stack & UX/UI">
+    <meta property="og:description" content="Diseño y construyo interfaces claras, accesibles y rápidas. Proyectos full-stack, UX/UI y un caso de estudio de principio a fin.">
+    <meta property="og:image" content="https://benjamindelgado.vercel.app/assets/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Benjamín Delgado, desarrollador full-stack — Portfolio 2026">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Benjamín Delgado — Desarrollador Full-stack & UX/UI">
+    <meta name="twitter:description" content="Diseño y construyo interfaces claras, accesibles y rápidas. Portfolio 2026.">
+    <meta name="twitter:image" content="https://benjamindelgado.vercel.app/assets/img/og-image.png">
+
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (error) {}
+      })();
+    </script>
+
+    <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="dist/styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Benjamín Delgado",
+        "url": "https://benjamindelgado.vercel.app/",
+        "jobTitle": "Desarrollador Full-stack",
+        "email": "mailto:benjamindelgado.contacto@gmail.com",
+        "sameAs": [
+          "https://github.com/Benjamin-mne",
+          "https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Entre Ríos",
+          "addressCountry": "AR"
+        },
+        "knowsAbout": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Astro",
+          "Node.js",
+          "UX/UI",
+          "Accesibilidad web"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="sticky top-0 z-50 border-b border-line/80 bg-bg/90 backdrop-blur-xl">
+      <div class="container-page flex h-[72px] items-center justify-between gap-5">
+        <a class="flex items-center gap-3" href="#inicio" aria-label="Benjamín Delgado — Inicio">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent font-mono text-sm font-semibold tracking-tight text-on-accent">BD</span>
+          <span class="hidden leading-tight sm:block">
+            <span class="block text-sm font-semibold tracking-tight">Benjamín Delgado</span>
+            <span class="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">UX/UI · Full-stack</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Navegación principal">
+          <a class="nav-link" href="#sobre-mi" data-nav="sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#metricas" data-nav="metricas">Métricas</a>
+          <a class="nav-link" href="#skills" data-nav="skills">Skills</a>
+          <a class="nav-link" href="#proyectos" data-nav="proyectos">Proyectos</a>
+          <a class="nav-link" href="#experiencia" data-nav="experiencia">Trayectoria</a>
+          <a class="nav-link" href="caso-estudio.html">Caso Miel</a>
+          <a class="nav-link" href="#contacto" data-nav="contacto">Contacto</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.66.08-.66 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.91 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.91.7.77 1.13 1.75 1.13 2.95 0 4.22-2.58 5.15-5.03 5.42.39.34.74 1.01.74 2.04 0 1.47-.01 2.66-.01 3.02 0 .29.2.64.76.53 4.36-1.45 7.51-5.57 7.51-10.43C23.02 5.24 18.27.5 12 .5Z"/>
+            </svg>
+          </a>
+          <button class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent" type="button" data-theme-toggle aria-label="Activar tema oscuro" title="Cambiar tema">
+            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+            </svg>
+            <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
+            </svg>
+          </button>
+
+          <a class="btn btn-primary btn-small hidden sm:inline-flex" href="#contacto">Hablemos</a>
+
+          <button class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent lg:hidden" type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false">
+            <svg class="h-5 w-5" data-menu-icon="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+            <svg class="hidden h-5 w-5" data-menu-icon="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18"/>
+            </svg>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden border-t border-line bg-bg lg:hidden" id="mobile-menu">
+        <nav class="container-page flex flex-col gap-1 py-4" aria-label="Navegación móvil">
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#sobre-mi">
+            Sobre mí <span class="font-mono text-[10px] text-muted">01</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#metricas">
+            Métricas <span class="font-mono text-[10px] text-muted">02</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#skills">
+            Skills <span class="font-mono text-[10px] text-muted">03</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#proyectos">
+            Proyectos <span class="font-mono text-[10px] text-muted">04</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#experiencia">
+            Trayectoria <span class="font-mono text-[10px] text-muted">05</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="caso-estudio.html">
+            Caso de estudio <span class="font-mono text-[10px] text-muted">06</span>
+          </a>
+          <a class="flex min-h-[44px] items-center justify-between rounded-xl px-3 text-sm font-medium text-ink transition-colors hover:bg-surface" href="#contacto">
+            Contacto <span class="font-mono text-[10px] text-muted">07</span>
+          </a>
+          <a class="btn btn-primary mt-3" href="#contacto">Hablemos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="relative overflow-hidden border-b border-line" id="inicio" aria-labelledby="hero-title">
+        <div class="blueprint-grid grid-mask absolute inset-0" aria-hidden="true"></div>
+        <div class="hero-glow absolute inset-0" aria-hidden="true"></div>
+
+        <div class="container-page relative grid gap-14 pb-16 pt-16 sm:pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:pb-24 lg:pt-24">
+          <div class="reveal">
+            <div class="mb-6 flex flex-wrap items-center gap-2">
+              <span class="tag tag-accent"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Disponible para proyectos</span>
+              <span class="tag">Argentina · UTC-3</span>
+            </div>
+
+            <p class="eyebrow mb-5">Portfolio 2026 / UX/UI + Front-end</p>
+            <h1 class="display-title max-w-[12ch]" id="hero-title">Descompongo <span class="text-accent">complejidad</span>, entrego simplicidad.</h1>
+            <p class="lead mt-7 max-w-xl">Soy Benjamín Delgado, desarrollador full-stack. Diseño y construyo interfaces claras, accesibles y rápidas, con foco en la arquitectura y en la experiencia de las personas.</p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a class="btn btn-primary" href="#proyectos">
+                Ver proyectos
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6"/>
+                </svg>
+              </a>
+              <a class="btn btn-ghost" href="#contacto">Hablemos</a>
+              <a class="group inline-flex min-h-[44px] items-center gap-2 px-2 text-sm font-medium text-muted transition-colors hover:text-accent" href="caso-estudio.html">
+                Leer caso de estudio
+                <svg class="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            </div>
+
+            <dl class="mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-line pt-6">
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Base</dt>
+                <dd class="mt-1 text-sm font-medium">Entre Ríos, AR</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Foco</dt>
+                <dd class="mt-1 text-sm font-medium">Diseño + código</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Stack</dt>
+                <dd class="mt-1 text-sm font-medium">TS / React / Node</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="corner-frame relative mx-auto w-full max-w-md border border-line bg-surface p-5 shadow-card sm:p-6">
+              <div class="flex items-center justify-between border-b border-line pb-4">
+                <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Perfil / 001</span>
+                <span class="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-accent">
+                  <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent"></span>
+                  Online
+                </span>
+              </div>
+
+              <div class="relative mt-5 overflow-hidden border border-line bg-surface-2 p-5">
+                <div class="blueprint-grid-strong absolute inset-0 opacity-70" aria-hidden="true"></div>
+                <div class="relative flex aspect-[4/3] items-center justify-center">
+                  <div class="absolute h-44 w-44 rounded-full border border-accent/20 sm:h-52 sm:w-52"></div>
+                  <div class="absolute h-60 w-60 rounded-full border border-dashed border-accent/20 sm:h-72 sm:w-72"></div>
+                  <div class="absolute left-1/2 top-0 h-full w-px bg-accent/20"></div>
+                  <div class="absolute top-1/2 h-px w-full bg-accent/20"></div>
+                  <img class="relative z-10 -mb-5 h-[11.5rem] max-h-full w-auto max-w-full self-end object-contain sm:h-[16rem]" src="assets/img/profile-optimized.png" alt="Retrato de Benjamín Delgado, desarrollador full-stack de Entre Ríos" width="896" height="1200" loading="eager" decoding="async">
+                  <span class="absolute bottom-3 left-3 tag">2026</span>
+                  <span class="absolute right-3 top-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted">Escala 1:1</span>
+                </div>
+              </div>
+
+              <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-line pt-4 text-sm">
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Rol</dt>
+                  <dd class="mt-1 font-medium">Full-stack developer</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Enfoque</dt>
+                  <dd class="mt-1 font-medium">UX/UI + arquitectura</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Base</dt>
+                  <dd class="mt-1 font-medium">Entre Ríos, Argentina</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Idiomas</dt>
+                  <dd class="mt-1 font-medium">Español · Inglés técnico</dd>
+                </div>
+              </dl>
+
+              <div class="mt-5 flex items-center justify-between border-t border-line pt-4">
+                <span class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Sistema / 2026</span>
+                <a class="text-sm font-medium text-accent transition-colors hover:text-accent-hover" href="#contacto">Hablemos →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative border-t border-line/70">
+          <div class="container-page flex flex-wrap items-center justify-between gap-4 py-4">
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">Stack principal</span>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Astro</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Tailwind</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-line bg-surface" id="metricas" aria-labelledby="metricas-title">
+        <div class="container-page py-10 sm:py-12">
+          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p class="eyebrow">En números</p>
+              <h2 class="mt-3 max-w-xl text-2xl font-semibold tracking-tight sm:text-3xl" id="metricas-title">Trabajo real, medido en proyectos y aprendizaje.</h2>
+            </div>
+            <p class="max-w-sm text-sm leading-7 text-muted">Una selección de proyectos, tecnologías y áreas que definen mi forma de construir.</p>
+          </div>
+
+          <dl class="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line lg:grid-cols-4">
+            <div class="group bg-bg p-5 transition-colors hover:bg-surface-2 sm:p-6">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Proyectos</dt>
+              <dd class="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">04</dd>
+              <dd class="mt-2 text-xs text-muted">Publicados y documentados</dd>
+            </div>
+            <div class="group bg-bg p-5 transition-colors hover:bg-surface-2 sm:p-6">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Años construyendo</dt>
+              <dd class="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">03</dd>
+              <dd class="mt-2 text-xs text-muted">Aprendizaje aplicado</dd>
+            </div>
+            <div class="group bg-bg p-5 transition-colors hover:bg-surface-2 sm:p-6">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Tecnologías</dt>
+              <dd class="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">15+</dd>
+              <dd class="mt-2 text-xs text-muted">Herramientas en uso</dd>
+            </div>
+            <div class="group bg-bg p-5 transition-colors hover:bg-surface-2 sm:p-6">
+              <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Áreas de foco</dt>
+              <dd class="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">03</dd>
+              <dd class="mt-2 text-xs text-muted">Diseño · Código · Producto</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="border-b border-line py-20 sm:py-24" id="skills" aria-labelledby="skills-title">
+        <div class="container-page">
+          <div>
+            <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-16">
+              <div class="reveal">
+                <p class="eyebrow">Capacidades</p>
+                <h2 class="section-title mt-4 max-w-2xl" id="skills-title">Herramientas para pasar de la idea al deploy.</h2>
+              </div>
+              <div class="reveal reveal-delay-1">
+                <p class="lead max-w-lg">Trabajo en todo el recorrido: entender el problema, ordenar la información, diseñar la interfaz y construirla con código mantenible.</p>
+                <div class="mt-6 border-l-2 border-accent pl-4">
+                  <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Principio</p>
+                  <p class="mt-2 max-w-sm text-sm leading-6 text-ink">La tecnología es un medio. La claridad del problema es el punto de partida.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <article class="reveal flex h-full flex-col rounded-2xl border border-line bg-surface p-5 sm:p-6">
+                <div class="flex items-center justify-between">
+                  <span class="font-mono text-[10px] tracking-[0.2em] text-accent">01</span>
+                  <svg class="h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 9l-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-lg font-semibold">Front-end</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">Interfaces accesibles, responsive y con foco en performance.</p>
+                <ul class="mt-auto flex flex-wrap gap-2 pt-6">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">TypeScript</li>
+                  <li class="tag">React</li>
+                  <li class="tag">Astro</li>
+                  <li class="tag">Tailwind</li>
+                </ul>
+              </article>
+
+              <article class="reveal reveal-delay-1 flex h-full flex-col rounded-2xl border border-line bg-surface p-5 sm:p-6">
+                <div class="flex items-center justify-between">
+                  <span class="font-mono text-[10px] tracking-[0.2em] text-accent">02</span>
+                  <svg class="h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <ellipse cx="12" cy="5" rx="8" ry="3"/>
+                    <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-lg font-semibold">Back-end</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">APIs, datos y tiempo real con una base simple y mantenible.</p>
+                <ul class="mt-auto flex flex-wrap gap-2 pt-6">
+                  <li class="tag">Node.js</li>
+                  <li class="tag">Express</li>
+                  <li class="tag">MongoDB</li>
+                  <li class="tag">Socket.io</li>
+                  <li class="tag">REST</li>
+                </ul>
+              </article>
+
+              <article class="reveal reveal-delay-2 flex h-full flex-col rounded-2xl border border-line bg-surface p-5 sm:p-6">
+                <div class="flex items-center justify-between">
+                  <span class="font-mono text-[10px] tracking-[0.2em] text-accent">03</span>
+                  <svg class="h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 3l9 5-9 5-9-5 9-5Z"/>
+                    <path d="M3 12l9 5 9-5M3 16l9 5 9-5"/>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-lg font-semibold">Producto</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">Research, arquitectura de información, sistemas y validación.</p>
+                <ul class="mt-auto flex flex-wrap gap-2 pt-6">
+                  <li class="tag">Figma</li>
+                  <li class="tag">UX Research</li>
+                  <li class="tag">Design System</li>
+                  <li class="tag">A11y</li>
+                  <li class="tag">Vitest</li>
+                  <li class="tag">Git</li>
+                  <li class="tag">Vercel</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-line py-20 sm:py-24" id="proyectos" aria-labelledby="proyectos-title">
+        <div class="container-page">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="reveal">
+              <p class="eyebrow">Trabajo seleccionado / 04</p>
+              <h2 class="section-title mt-4 max-w-3xl" id="proyectos-title">Proyectos que resuelven problemas reales.</h2>
+            </div>
+            <p class="reveal reveal-delay-1 max-w-sm text-sm leading-7 text-muted">Cuatro proyectos, distintas escalas: desde un motor de física 2D hasta una landing para un productor de miel.</p>
+          </div>
+
+          <article class="reveal mt-12 overflow-hidden rounded-3xl border border-line bg-surface shadow-card">
+            <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+              <a class="wireframe-tint group relative block overflow-hidden border-b border-line bg-surface-2 lg:border-b-0 lg:border-r" href="caso-estudio.html" aria-label="Ver caso de estudio de Landing Page Miel">
+                <img class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.02]" src="assets/img/proyecto-miel.svg" alt="Wireframe genérico de la landing de La Sanjosesina con hero, seis productos, historia y contacto" width="1200" height="800" loading="lazy" decoding="async">
+              </a>
+
+              <div class="flex flex-col justify-between p-6 sm:p-8 lg:p-10">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="tag tag-accent">Caso de estudio</span>
+                    <span class="tag">2026</span>
+                  </div>
+                  <h3 class="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">Landing Page Miel</h3>
+                  <p class="mt-4 text-sm leading-7 text-muted">Sitio para La Sanjosesina, una apícola familiar de San José, Entre Ríos. Diseñé y desarrollé una landing cálida, rápida y directa, con el producto como protagonista y el contacto por WhatsApp a un toque.</p>
+
+                  <ul class="mt-6 flex flex-wrap gap-2">
+                    <li class="tag">Astro</li>
+                    <li class="tag">Tailwind</li>
+                    <li class="tag">SEO</li>
+                    <li class="tag">Responsive</li>
+                    <li class="tag">WhatsApp</li>
+                  </ul>
+
+                  <p class="mt-4 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Resultado</span> · Landing publicada, mantenible y con contacto directo por WhatsApp.</p>
+
+                  <dl class="mt-8 grid grid-cols-2 gap-4 border-t border-line pt-6 text-sm">
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Rol</dt>
+                      <dd class="mt-1 font-medium">Diseño + desarrollo</dd>
+                    </div>
+                    <div>
+                      <dt class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Foco</dt>
+                      <dd class="mt-1 font-medium">Marca + conversión</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <a class="btn btn-primary btn-small" href="caso-estudio.html">
+                    Leer caso de estudio
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                  </a>
+                  <a class="btn btn-ghost btn-small" href="https://www.lasanjosesina.com/" target="_blank" rel="noopener noreferrer">
+                    Ver sitio
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="project-card reveal overflow-hidden rounded-2xl border border-line bg-surface">
+              <a class="group block" href="caso-estudio.html#comparsa" aria-label="Ver detalle de Comparsa de Carnaval">
+                <div class="wireframe-tint overflow-hidden border-b border-line bg-surface-2">
+                  <img class="aspect-[3/2] w-full object-cover" src="assets/img/proyecto-comparsa.svg" alt="Wireframe genérico del panel de gestión de Comparsa de Carnaval con navegación, métricas y tabla de registros" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">01 / Web app</span>
+                    <span class="font-mono text-[9px] text-muted">2023</span>
+                  </div>
+                  <h3 class="mt-5 text-xl font-semibold tracking-tight">Comparsa de Carnaval</h3>
+                  <p class="mt-3 text-sm leading-6 text-muted">Gestión de agrupaciones, documentación y comunicación para una comparsa. PDFs y correos automatizados en un solo flujo.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Resultado</span> · Inscripciones, PDFs y correos unificados.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">React</li>
+                    <li class="tag">Redux</li>
+                    <li class="tag">Express</li>
+                    <li class="tag">MongoDB</li>
+                  </ul>
+                  <div class="mt-6 flex items-center justify-between border-t border-line pt-4">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Ver detalle</span>
+                    <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="project-card reveal reveal-delay-1 overflow-hidden rounded-2xl border border-line bg-surface">
+              <a class="group block" href="caso-estudio.html#espacios" aria-label="Ver detalle de Espacios de Trabajo">
+                <div class="wireframe-tint overflow-hidden border-b border-line bg-surface-2">
+                  <img class="aspect-[3/2] w-full object-cover" src="assets/img/proyecto-espacios.svg" alt="Wireframe genérico del tablero colaborativo de Espacios de Trabajo con columnas y tarjetas" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">02 / Colaboración</span>
+                    <span class="font-mono text-[9px] text-muted">2023</span>
+                  </div>
+                  <h3 class="mt-5 text-xl font-semibold tracking-tight">Espacios de Trabajo</h3>
+                  <p class="mt-3 text-sm leading-6 text-muted">Tablero colaborativo en tiempo real para un sello discográfico: kanban, calendario e inventario conectados.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Resultado</span> · Actualizaciones en tiempo real entre áreas.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">Socket.io</li>
+                    <li class="tag">Node.js</li>
+                    <li class="tag">Tiempo real</li>
+                  </ul>
+                  <div class="mt-6 flex items-center justify-between border-t border-line pt-4">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Ver detalle</span>
+                    <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="project-card reveal reveal-delay-2 overflow-hidden rounded-2xl border border-line bg-surface">
+              <a class="group block" href="caso-estudio.html#fisiks2d" aria-label="Ver detalle de fisiks2D">
+                <div class="wireframe-tint overflow-hidden border-b border-line bg-surface-2">
+                  <img class="aspect-[3/2] w-full object-cover" src="assets/img/proyecto-fisiks2d.svg" alt="Wireframe genérico del editor de física 2D de fisiks2D con canvas, formas geométricas y código" width="1200" height="800" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.18em] text-accent">03 / Open source</span>
+                    <span class="font-mono text-[9px] text-muted">2024</span>
+                  </div>
+                  <h3 class="mt-5 text-xl font-semibold tracking-tight">fisiks2D</h3>
+                  <p class="mt-3 text-sm leading-6 text-muted">Motor de física 2D escrito en TypeScript: vectores, colisiones AABB y simulación en canvas, con tests.</p>
+                  <p class="mt-3 text-xs leading-5 text-muted"><span class="font-mono text-[9px] uppercase tracking-[0.14em] text-accent">Aprendizaje</span> · Colisiones, canvas y testing con Vitest.</p>
+                  <ul class="mt-5 flex flex-wrap gap-2">
+                    <li class="tag">TypeScript</li>
+                    <li class="tag">Canvas</li>
+                    <li class="tag">Vitest</li>
+                  </ul>
+                  <div class="mt-6 flex items-center justify-between border-t border-line pt-4">
+                    <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Ver detalle</span>
+                    <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-line bg-surface py-20 sm:py-24" id="experiencia" aria-labelledby="experiencia-title">
+        <div class="container-page">
+          <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+            <div class="reveal lg:sticky lg:top-28 lg:self-start">
+              <p class="eyebrow">Trayectoria</p>
+              <h2 class="section-title mt-4" id="experiencia-title">Aprender construyendo, iterar con criterio.</h2>
+              <p class="lead mt-5">Mi formación es autodidacta y está atravesada por proyectos reales. Cada entrega me dejó una herramienta nueva y una pregunta mejor.</p>
+
+              <div class="mt-8 rounded-2xl border border-line bg-bg p-5">
+                <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Actualmente</p>
+                <p class="mt-2 text-sm leading-6 text-ink">Disponible para proyectos freelance y oportunidades full-time.</p>
+                <a class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-hover" href="#contacto">
+                  Hablemos
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <div class="reveal">
+                <h3 class="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Experiencia</h3>
+                <ol class="mt-6 space-y-7 border-l border-line pl-6">
+                  <li class="relative">
+                    <span class="absolute -left-[1.9rem] top-1.5 h-2.5 w-2.5 rounded-full border border-bg bg-accent"></span>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-accent">2023 — presente</span>
+                      <span class="tag">Independiente</span>
+                    </div>
+                    <h4 class="mt-3 text-lg font-semibold">Desarrollador full-stack</h4>
+                    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Proyectos independientes · Freelance</p>
+                    <p class="mt-2 text-sm leading-7 text-muted">Diseño y desarrollo de aplicaciones web de punta a punta, desde la arquitectura de datos hasta la interfaz y el deploy.</p>
+                    <ul class="mt-3 space-y-1.5 text-sm leading-6 text-muted">
+                      <li>· Aplicaciones full-stack con React, Node.js y MongoDB.</li>
+                      <li>· Landings y sitios con foco en performance, SEO y accesibilidad.</li>
+                      <li>· Sistemas de diseño y componentes reutilizables.</li>
+                    </ul>
+                  </li>
+
+                  <li class="relative">
+                    <span class="absolute -left-[1.9rem] top-1.5 h-2.5 w-2.5 rounded-full border border-bg bg-accent"></span>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-accent">2026</span>
+                      <span class="tag">Proyecto final</span>
+                    </div>
+                    <h4 class="mt-3 text-lg font-semibold">Portfolio UX/UI + caso de estudio</h4>
+                    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Proyecto académico · UX/UI 2026</p>
+                    <p class="mt-2 text-sm leading-7 text-muted">Investigación, arquitectura de información, identidad visual, design system, prototipo y desarrollo de este portfolio, más el caso de estudio de la Landing Page Miel.</p>
+                    <ul class="mt-3 space-y-1.5 text-sm leading-6 text-muted">
+                      <li>· Portfolio one-page con design system, modo oscuro y foco AA.</li>
+                      <li>· Caso de estudio Miel con research, decisiones y resultados.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="reveal reveal-delay-1">
+                <h3 class="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Formación</h3>
+                <ol class="mt-6 space-y-6 border-l border-line pl-6">
+                  <li class="relative">
+                    <span class="absolute -left-[1.9rem] top-1.5 h-2.5 w-2.5 rounded-full border border-bg bg-accent"></span>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-accent">2026</span>
+                      <span class="tag">UX/UI</span>
+                    </div>
+                    <h4 class="mt-3 text-base font-semibold">Diseño de experiencia e interfaz</h4>
+                    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Formación autodidacta · Práctica aplicada</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">Research, arquitectura de información, wireframes, design systems, accesibilidad y test de usabilidad.</p>
+                    <ul class="mt-3 space-y-1.5 text-sm leading-6 text-muted">
+                      <li>· Research, benchmark y arquitectura de información.</li>
+                      <li>· Wireframes, tokens, componentes y validación con usuarios.</li>
+                    </ul>
+                  </li>
+
+                  <li class="relative">
+                    <span class="absolute -left-[1.9rem] top-1.5 h-2.5 w-2.5 rounded-full border border-bg bg-accent"></span>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-accent">2024 — 2025</span>
+                      <span class="tag">Front-end</span>
+                    </div>
+                    <h4 class="mt-3 text-base font-semibold">TypeScript, React, Astro y testing</h4>
+                    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Formación autodidacta · Proyectos reales</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">Componentes, estado, performance, SEO técnico y pruebas con Vitest.</p>
+                    <ul class="mt-3 space-y-1.5 text-sm leading-6 text-muted">
+                      <li>· TypeScript, React, Astro y Tailwind en producción.</li>
+                      <li>· Testing con Vitest y SEO técnico verificable.</li>
+                    </ul>
+                  </li>
+
+                  <li class="relative">
+                    <span class="absolute -left-[1.9rem] top-1.5 h-2.5 w-2.5 rounded-full border border-bg bg-accent"></span>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-accent">2022 — 2023</span>
+                      <span class="tag">Full-stack</span>
+                    </div>
+                    <h4 class="mt-3 text-base font-semibold">Fundamentos de desarrollo web</h4>
+                    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted">Formación autodidacta · Base técnica</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">HTML, CSS, JavaScript, Node.js, Express, MongoDB, APIs REST y Git.</p>
+                    <ul class="mt-3 space-y-1.5 text-sm leading-6 text-muted">
+                      <li>· Node.js, Express, MongoDB y APIs REST.</li>
+                      <li>· Git, deploy y fundamentos de accesibilidad web.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-line py-20 sm:py-24" id="sobre-mi" aria-labelledby="sobre-mi-title">
+        <div class="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <div class="reveal order-2 lg:order-1">
+            <div class="corner-frame relative overflow-hidden rounded-3xl border border-line bg-surface-2 shadow-card">
+              <div class="blueprint-grid-strong absolute inset-0" aria-hidden="true"></div>
+              <img class="relative z-10 aspect-[896/1200] w-full object-cover" src="assets/img/profile-optimized.png" alt="Retrato de Benjamín Delgado, desarrollador full-stack de Entre Ríos" width="896" height="1200" loading="lazy" decoding="async">
+              <div class="pointer-events-none absolute inset-0 z-20 flex flex-col justify-between" aria-hidden="true">
+                <div class="flex items-start justify-between gap-3 bg-gradient-to-b from-[#0B0F14]/90 via-[#0B0F14]/50 to-transparent p-4 sm:p-5">
+                  <div>
+                    <p class="font-mono text-[9px] uppercase tracking-[0.2em] text-[#FB923C]">Perfil / 001</p>
+                    <p class="mt-1 font-mono text-[8px] uppercase tracking-[0.16em] text-[#F5F5F4]/70">Sistema / Diseño + código</p>
+                  </div>
+                  <span class="font-mono text-[9px] tracking-[0.18em] text-[#F5F5F4]/80">2026</span>
+                </div>
+                <div class="relative bg-gradient-to-t from-[#0B0F14]/95 via-[#0B0F14]/80 to-transparent px-4 pb-5 pt-16 sm:px-5">
+                  <span class="inline-flex items-center gap-1.5 font-mono text-[8px] uppercase tracking-[0.18em] text-[#FB923C]"><span class="h-1.5 w-1.5 rounded-full bg-[#FB923C]"></span>Disponible</span>
+                  <p class="mt-2 text-xl font-semibold tracking-tight text-[#F5F5F4] sm:text-2xl">Benjamín Delgado</p>
+                  <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-[#FB923C]">Full-stack developer</p>
+                  <p class="mt-2 font-mono text-[8px] uppercase tracking-[0.14em] text-[#F5F5F4]/60">Entre Ríos, Argentina · UTC-3</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.18em] text-muted">
+              <span>Retrato / Benjamín</span>
+              <span>Entre Ríos, AR</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-1 order-1 lg:order-2">
+            <p class="eyebrow">Sobre mí</p>
+            <h2 class="section-title mt-4" id="sobre-mi-title">Diseño con lógica, programo con intención.</h2>
+
+            <div class="mt-6 space-y-4 body-copy">
+              <p>Soy Benjamín, desarrollador full-stack de Entre Ríos, Argentina. Me gusta entender cómo funcionan las cosas por dentro y después traducir esa complejidad a experiencias simples, legibles y accesibles.</p>
+              <p>Mi forma de trabajar combina el pensamiento de producto con el detalle de la implementación: investigar, ordenar, prototipar, construir y medir. Disfruto especialmente los proyectos donde el diseño y el código no son etapas separadas, sino parte del mismo proceso.</p>
+              <p>Cuando no estoy programando, estoy leyendo sobre interfaces, probando herramientas nuevas o buscando la forma de hacer lo mismo con menos fricción.</p>
+            </div>
+
+            <div class="mt-8 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-xl border border-line bg-surface p-4">
+                <span class="font-mono text-[10px] text-accent">01</span>
+                <p class="mt-2 text-sm font-semibold">Claridad</p>
+                <p class="mt-1 text-xs leading-5 text-muted">Menos ruido, mejores decisiones.</p>
+              </div>
+              <div class="rounded-xl border border-line bg-surface p-4">
+                <span class="font-mono text-[10px] text-accent">02</span>
+                <p class="mt-2 text-sm font-semibold">Curiosidad</p>
+                <p class="mt-1 text-xs leading-5 text-muted">Preguntar antes de asumir.</p>
+              </div>
+              <div class="rounded-xl border border-line bg-surface p-4">
+                <span class="font-mono text-[10px] text-accent">03</span>
+                <p class="mt-2 text-sm font-semibold">Criterio</p>
+                <p class="mt-1 text-xs leading-5 text-muted">Código y diseño que envejecen bien.</p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="btn btn-primary btn-small" href="#contacto">Hablemos</a>
+              <a class="btn btn-ghost btn-small" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden border-b border-line bg-surface py-20 sm:py-24" id="contacto" aria-labelledby="contacto-title">
+        <div class="blueprint-grid grid-mask absolute inset-0 opacity-50" aria-hidden="true"></div>
+
+        <div class="container-page relative">
+          <div class="corner-frame mx-auto max-w-5xl border border-line bg-bg p-6 sm:p-10 lg:p-14">
+            <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div>
+                <p class="eyebrow">Contacto / 005</p>
+                <h2 class="section-title mt-4" id="contacto-title">¿Construimos algo que valga la pena?</h2>
+                <p class="lead mt-5 max-w-xl">Si tenés una idea, un producto o un problema para resolver, escribime. Me interesa trabajar en proyectos con impacto real y equipos que cuiden el detalle.</p>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <a class="btn btn-primary" href="mailto:benjamindelgado.contacto@gmail.com?subject=Hablemos%20de%20un%20proyecto">
+                    Escribime
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                  </a>
+                  <button class="btn btn-ghost" type="button" data-copy-email="benjamindelgado.contacto@gmail.com">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="11" height="11" rx="2"/>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Copiar email
+                  </button>
+                </div>
+                <p class="mt-3 min-h-5 font-mono text-[10px] uppercase tracking-[0.16em] text-accent" data-copy-status aria-live="polite"></p>
+              </div>
+
+              <dl class="space-y-5 border-t border-line pt-6 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">Email</dt>
+                  <dd class="mt-1 break-all text-sm">
+                    <a class="transition-colors hover:text-accent" href="mailto:benjamindelgado.contacto@gmail.com">benjamindelgado.contacto@gmail.com</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">GitHub</dt>
+                  <dd class="mt-1 text-sm">
+                    <a class="inline-flex items-center gap-1.5 transition-colors hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">
+                      github.com/Benjamin-mne
+                      <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17L17 7M7 7h10v10"/>
+                      </svg>
+                    </a>
+                  </dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">Ubicación</dt>
+                  <dd class="mt-1 text-sm">Entre Ríos, Argentina · UTC-3</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">Disponibilidad</dt>
+                  <dd class="mt-1 flex items-center gap-2 text-sm">
+                    <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+                    Abierto a proyectos · 2026
+                  </dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[9px] uppercase tracking-[0.2em] text-muted">LinkedIn</dt>
+                  <dd class="mt-1 text-sm">
+                    <a class="inline-flex items-center gap-1.5 transition-colors hover:text-accent" href="https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/" target="_blank" rel="noopener noreferrer">
+                      linkedin.com/in/benjamín-delgado
+                      <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17L17 7M7 7h10v10"/>
+                      </svg>
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="mt-10 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
+              <p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Respuesta / lo antes posible</p>
+              <p class="text-sm text-muted">También podés escribirme por GitHub o LinkedIn.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-bg py-10">
+      <div class="container-page">
+        <div class="flex flex-col gap-8 border-b border-line pb-8 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <a class="inline-flex items-center gap-3" href="#inicio" aria-label="Volver al inicio">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent font-mono text-sm font-semibold text-on-accent">BD</span>
+              <span class="leading-tight">
+                <span class="block text-sm font-semibold tracking-tight">Benjamín Delgado</span>
+                <span class="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">UX/UI · Full-stack</span>
+              </span>
+            </a>
+            <p class="mt-4 max-w-sm text-sm leading-6 text-muted">Diseño y desarrollo de experiencias digitales claras, accesibles y con foco en el detalle.</p>
+          </div>
+
+          <nav aria-label="Navegación del pie de página">
+            <ul class="grid grid-cols-2 gap-x-10 gap-y-1 text-sm">
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#sobre-mi">Sobre mí</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#metricas">Métricas</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#skills">Skills</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#proyectos">Proyectos</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#experiencia">Trayectoria</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="caso-estudio.html">Caso de estudio</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="#contacto">Contacto</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+              <li><a class="inline-flex min-h-[36px] items-center text-muted transition-colors hover:text-accent" href="https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex flex-col gap-4 pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span data-year>2026</span> Benjamín Delgado. Hecho con HTML, Tailwind y JavaScript.</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="mailto:benjamindelgado.contacto@gmail.com">Email</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="https://github.com/Benjamin-mne" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="https://www.linkedin.com/in/benjam%C3%ADn-delgado-a51728228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="inline-flex min-h-[36px] items-center transition-colors hover:text-accent" href="#inicio">Volver arriba ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
