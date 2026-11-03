@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página no encontrada — Benjamín Delgado</title>
+    <meta name="description" content="La página que buscás no existe o cambió de lugar.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#F7F5F0">
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="dist/styles.css">
+  </head>
+
+  <body>
+    <header class="border-b border-line">
+      <div class="container-page flex h-[72px] items-center justify-between gap-5">
+        <a class="flex items-center gap-3" href="index.html" aria-label="Benjamín Delgado — Inicio">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent font-mono text-sm font-semibold tracking-tight text-on-accent">BD</span>
+          <span class="hidden leading-tight sm:block">
+            <span class="block text-sm font-semibold tracking-tight">Benjamín Delgado</span>
+            <span class="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">UX/UI · Full-stack</span>
+          </span>
+        </a>
+
+        <button class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-accent hover:text-accent" type="button" data-theme-toggle aria-label="Activar tema oscuro" title="Cambiar tema">
+          <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+          </svg>
+          <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="relative overflow-hidden" id="main">
+      <div class="blueprint-grid grid-mask absolute inset-0" aria-hidden="true"></div>
+      <div class="hero-glow absolute inset-0" aria-hidden="true"></div>
+
+      <div class="container-page relative flex min-h-[calc(100vh-72px)] items-center justify-center py-16">
+        <div class="corner-frame w-full max-w-2xl border border-line bg-bg p-6 text-center shadow-card sm:p-10">
+          <p class="eyebrow justify-center">Error / 404</p>
+          <p class="mt-6 font-display text-[clamp(5rem,20vw,10rem)] font-semibold leading-none tracking-[-0.08em] text-accent">404</p>
+          <h1 class="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">Esta página se fue a recolectar polen.</h1>
+          <p class="mx-auto mt-4 max-w-md text-sm leading-7 text-muted">La dirección no existe, cambió de lugar o nunca estuvo acá. Probemos desde un punto conocido.</p>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a class="btn btn-primary" href="index.html">
+              Volver al portfolio
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="index.html#proyectos">Ver proyectos</a>
+          </div>
+
+          <p class="mt-8 font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Benjamín Delgado · Portfolio 2026</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
